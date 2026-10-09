@@ -1,0 +1,6 @@
+# Upstream third-party source is downloaded for use, not redistributed
+experiments/EXP-0001/_upstream_cache/
+__pycache__/
+.pytest_cache/
+.env
+*.pyc
