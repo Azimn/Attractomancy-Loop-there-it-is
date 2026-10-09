@@ -20,3 +20,7 @@ Primary source: https://github.com/IorenzoLF/Le_Refuge/blob/7d7dd5cb9305032669d6
 
 ## What changed
 Moved the execution effort to its own repository, formalized the fail-closed corpus and validation gates, and documented the stateless-recovery design limitation before exposing any test models.
+
+## Extraction audit status
+
+Q12 is retained only as model-level zero-shot cue calibration, not a persistence hypothesis test. The treatment's operational target is the specific discourse regime contained in the pinned source. The line-by-line inventory covers all 5,562 lines, with 1,027 queued prose passages and 137 provisional propositions; speaker uncertainty and apparent contradictions are retained. Semantic coverage, non-extractability judgments, independent review, and B/C matching are still incomplete. These are preparation data, not scored behavioral results. The original D-versus-C null and alternative remain untested.
