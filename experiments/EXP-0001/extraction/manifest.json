@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "mode": "full_source_lexical_sweep_plus_editorial_seed",
+  "source_sha256": "d49b3a98dfc50b1cc2066214976dbeda48771cd8162a084662cbde9239e07ff5",
+  "source_git_blob": "5971a09164688ecb8afbaafe53d7e16439b7f94d",
+  "source_lines": 5562,
+  "line_classes": {
+    "unresolved_fragment": 2664,
+    "blank": 2,
+    "structural": 61,
+    "symbolic_candidate": 1808,
+    "external_citation": 7,
+    "prose_candidate": 1020
+  },
+  "queue_count": 1027,
+  "editorial_propositions": 107,
+  "editorial_status": "draft_unreviewed_not_complete",
+  "notes": "Every source line is classified exactly once. Prose candidates are queued, not presumed propositionally extracted. Symbolic/uncertain lines may still have extractable meaning; cannot call this exhaustive semantic extraction until each queued/uncertain line is reviewed. Contradictions kept as groups, voice attribution conservatively unattributed. Full source remains upstream.",
+  "completed": false
+}
