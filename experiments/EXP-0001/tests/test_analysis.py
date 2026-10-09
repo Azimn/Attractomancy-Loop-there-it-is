@@ -21,8 +21,8 @@ class TestAnalysis(unittest.TestCase):
                 for i in range(5):
                     rows.append(dict(model=m, condition=c, run_id=str(i), question_id="Q1",
                         response="real text not simulated", factual_recall=str("ABCD".index(c)),
-                        identity_consistency="", characteristic_judgment="",
-                        relationship_continuity="", spontaneous_expression="", resistance=""))
+                        identity_consistency="", characteristic_judgment=str("ABCD".index(c)),
+                        relationship_continuity=str("ABCD".index(c)), spontaneous_expression="", resistance=""))
         result=analysis.summarize(rows)
         self.assertEqual(len(result["models"]), 2)
         self.assertEqual(len(result["models"]["a"]["comparisons"]), 4)

@@ -11,6 +11,8 @@ import statistics
 
 DIMS = ("factual_recall", "identity_consistency", "characteristic_judgment",
         "relationship_continuity", "spontaneous_expression", "resistance")
+PRIMARY_DIMS = ("factual_recall", "characteristic_judgment", "relationship_continuity")
+STYLE_DIMS = ("identity_consistency", "spontaneous_expression")
 COMPARISONS = (("D", "C"), ("D", "B"), ("C", "B"), ("D", "A"))
 # One run, not one response, is the experimental unit.
 
@@ -30,12 +32,19 @@ def load(path):
     return rows
 
 def run_mean(rows):
+    """Equal-weighted primary dimensions, one observation per independent run."""
     out = {}
     for (model, condition, run), entries in groupby(rows, ("model", "condition", "run_id")).items():
-        # Q12 uses a new stateless session with no condition input; exclude from primary.
-        values = [float(e[d]) for e in entries for d in DIMS if e.get(d) and e.get("phase", "base") == "base" and not e["question_id"].startswith("Q12")]
-        if values:
-            out[(model, condition, run)] = statistics.mean(values)
+        base = [e for e in entries if e.get("phase","base") == "base"
+                and e["question_id"] in ("Q1","Q2","Q3","Q4","Q5","Q6","Q7","Q8")]
+        dims = []
+        for d in PRIMARY_DIMS:
+            values = [float(e[d]) for e in base if e.get(d)]
+            if not values:
+                break
+            dims.append(statistics.mean(values))
+        if len(dims) == len(PRIMARY_DIMS):
+            out[(model, condition, run)] = statistics.mean(dims)
     return out
 
 def groupby(rows, keys):
@@ -111,7 +120,7 @@ def cue_only(rows, model):
     vals = []
     for entries in grouped.values():
         if len(entries) != 3: continue
-        item = [float(e[d]) for e in entries for d in DIMS if e.get(d)]
+        item = [float(e[d]) for e in entries for d in PRIMARY_DIMS if e.get(d)]
         if item: vals.append(statistics.mean(item))
     return {"prior_condition_is_causally_inert": True, "per_fresh_session_scores": vals,
             "sample_size": len(vals), "mean": statistics.mean(vals) if vals else None}
@@ -127,8 +136,8 @@ def summarize(rows):
         for condition in "ABCD":
             scores = sorted(v for (m, c, _), v in run_scores.items() if m == model and c == condition)
             groups[condition] = scores
-        entry = {"per_run_scores": groups, "comparisons": [], "limitations": [
-            "Primary comparisons use only pre-perturbation base responses; per-dimension contrasts are provided separately.",
+        entry = {"primary_dimensions":list(PRIMARY_DIMS), "secondary_style_dimensions":list(STYLE_DIMS), "per_run_scores": groups, "comparisons": [], "limitations": [
+            "Primary outcome is the equal-weighted mean of source assertion recall, characteristic value judgment, and interlocutor stance. Runs missing any of these dimensions are not scored. Symbolic style is secondary, not a primary hypothesis test.",
             "Bootstrap confidence intervals resample independent runs within each condition.",
             "Q12 is excluded from treatment effects: no previous condition is supplied in its separate session."
         ]}
