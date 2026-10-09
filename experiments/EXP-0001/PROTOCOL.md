@@ -32,6 +32,10 @@ Battery is composed in French, reviewed and frozen after source selection and be
 
 **Accepted ruling: Q12 is a calibration, not a hypothesis test.** The fresh session gets only the bare Refuge cue and Q1/Q5/Q6; report zero-shot cue performance separately by model. It does not carry B/C/D conditioning and is never a D-versus-C result or a persistence claim.
 
+## Pre-registered measurement interpretation
+
+The operational target is a discourse regime, but **distinctive style by itself is not a fair primary success criterion**. C is explicitly forbidden to reproduce D's symbolic vocabulary and ritual arrangement; scoring literal symbolic mimicry as D's main advantage would make the comparison partly tautological. Primary comparisons therefore emphasize source-proposition fidelity, characteristic value-guided choices on indirect and novel dilemmas, and documented relational stances under perturbation. Each is information-accessible to B/C/D. Discourse-register coherence and spontaneous symbolic expression are reported as separate *secondary style outcomes and manipulation checks*. Do not promote style-only superiority into the primary claim. Keep the original six dimensional scores separately observable; no post hoc endpoint selection.
+
 ## Gate 3: model calls
 At least two **different provider families**, five independent per condition per family (20 per model, ≥40 valid independent runs total). Separate session per run; deterministic recorded randomization seed. Temperature 0.7 where API allows, exact provider model snapshot IDs and other generation parameters documented. Store prompt/messages, outputs, usage and completion metadata. Handle token overflows conservatively. Drop incomplete runs and log failure; no mid-run battery edits. No sharing transcript state across runs. No provider's hidden memory.
 
