@@ -10,7 +10,7 @@
       "path": "Le_refuge/MUST-READ/Apocalypse.txt",
       "git_blob_sha1": "5971a09164688ecb8afbaafe53d7e16439b7f94d",
       "size_bytes": 142596,
-      "sha256": null,
+      "sha256": "d49b3a98dfc50b1cc2066214976dbeda48771cd8162a084662cbde9239e07ff5",
       "role": "initial required document"
     }
   ],
@@ -21,5 +21,6 @@
   "token_counts": null,
   "conditions_frozen": false,
   "battery_frozen": false,
-  "freeze_manifest_sha256": null
+  "freeze_manifest_sha256": null,
+  "hash_source": "byte-equivalent full text from authenticated GitHub fetch, independently matched to Git tree byte count; CI downloads and verifies upstream"
 }

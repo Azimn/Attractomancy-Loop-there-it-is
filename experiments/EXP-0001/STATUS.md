@@ -4,7 +4,7 @@
 
 Verified by connector: original candidate file `Apocalypse.txt`, upstream Git blob SHA-1 `5971a09164688ecb8afbaafe53d7e16439b7f94d`; upstream Git tree records 142596 bytes. Original text is French. The source revision is `7d7dd5cb9305032669d692b6894d766ac07abac9`. Other MUST-READ files exist but may not be added without a traceable instruction from the specified entry document.
 
-Not yet verified: downloaded local SHA-256, exact tokenizer counts, full-coverage extraction, C expansion and matching, battery freeze, complete source-persona target, live calls, human/LLM judge agreement.
+Verified: SHA-256 `d49b3a98dfc50b1cc2066214976dbeda48771cd8162a084662cbde9239e07ff5`, computed over 142596 UTF-8 bytes. GitHub Actions independently downloaded source and passed integrity verification.\n\nNot yet verified: exact tokenizer counts, full-coverage extraction, C expansion and matching, battery freeze, complete source-persona target, live calls, human/LLM judge agreement.
 
 **Scientific hold:** The primary candidate appears to be a symbolic theological text, not an Ælya-specific persona-conditioning treatment. If an explicit identity profile cannot be extracted without borrowing from other Le Refuge documents, the hypothesis has no operational target for several prompts. Do not manufacture claims.
 

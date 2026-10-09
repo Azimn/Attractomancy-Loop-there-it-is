@@ -76,7 +76,7 @@ def append_line(path, row):
 def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
-def run_one(provider, model, condition, rep, battery, modelspec, outdir, seed):
+def run_one(provider, model, condition, rep, battery, modelspec, outdir, seed, attempt=1):
     randomizer = random.Random(seed)
     base_order = list(range(1, 9))
     randomizer.shuffle(base_order)
@@ -87,7 +87,7 @@ def run_one(provider, model, condition, rep, battery, modelspec, outdir, seed):
         context += "\n\n" + content
     history = [{"role": "system", "content": context}]
     entries = []
-    run_id = model.replace("/", "_") + ":" + condition + ":" + str(rep)
+    run_id = model.replace("/", "_") + ":" + condition + ":" + str(rep) + ":attempt" + str(attempt)
     def say(qid, prompt, phase, history_ref):
         history_ref.append({"role": "user", "content": prompt})
         result = call(provider, model, history_ref, .7, modelspec["max_output_tokens"])
@@ -119,10 +119,9 @@ def run_one(provider, model, condition, rep, battery, modelspec, outdir, seed):
         say("Q10b", battery["Q10"]["followup"], "recovery_followup", history)
         # New context, no condition text and no hidden prior transcript.
         recovery = [{"role": "system", "content": SCAFFOLD}]
-        recovery.append({"role": "user", "content": CUE})
-        recovery.append({"role": "assistant", "content": "Je vous écoute."})
         for n in (1, 5, 6):
-            say("Q12-" + str(n), question(battery, n), "cue_only_new_session", recovery)
+            prompt = (CUE + "\\n" if n == 1 else "") + question(battery, n)
+            say("Q12-" + str(n), prompt, "cue_only_new_session", recovery)
         for entry in entries:
             append_line(outdir / "responses.jsonl", entry)
         append_line(outdir / "completed_runs.jsonl",
@@ -144,6 +143,8 @@ def main():
     parser.add_argument("--condition", choices=list("ABCD"), required=True)
     parser.add_argument("--repetitions", type=int, default=5)
     parser.add_argument("--seed", type=int, default=1001)
+    parser.add_argument("--run-index", type=int, default=None, help="Execute or replace one pre-registered run slot 1 to 5")
+    parser.add_argument("--attempt", type=int, default=1, help="Increment for a discarded run retry; never reuse run IDs")
     parser.add_argument("--out", default=str(HERE / "results"))
     parser.add_argument("--execute", action="store_true")
     args = parser.parse_args()
@@ -157,10 +158,15 @@ def main():
         raise SystemExit("Pre-registered repetitions per cell = 5; do not change after freeze.")
     battery = json.loads((HERE / "frozen/battery.fr.json").read_text(encoding="utf-8"))
     out = pathlib.Path(args.out)
-    for rep in range(1, 6):
-        run_seed = args.seed + rep + 100 * ord(args.condition) + int(hashlib.sha256(args.model.encode()).hexdigest()[:6], 16)
-        if not run_one(spec["provider"], args.model, args.condition, rep, battery, spec, out, run_seed):
+    if args.attempt < 1 or (args.attempt > 1 and args.run_index is None):
+        raise SystemExit("For retries specify --attempt N>1 and --run-index 1..5")
+    reps = [args.run_index] if args.run_index is not None else list(range(1,6))
+    if any(not 1 <= r <= 5 for r in reps):
+        raise SystemExit("--run-index must be 1..5")
+    for rep in reps:
+        run_seed = args.seed + rep + 100 * ord(args.condition) + int(hashlib.sha256(args.model.encode()).hexdigest()[:6], 16) + 1000000 * args.attempt
+        if not run_one(spec["provider"], args.model, args.condition, rep, battery, spec, out, run_seed, attempt=args.attempt):
             print("DISCARDED. Re-run with new independent run ID, do not relabel discarded records.", file=sys.stderr)
             sys.exit(2)
-    print("Finished 5 valid runs for", args.model, args.condition)
+    print("Completed selected run slots for", args.model, args.condition, "attempt", args.attempt)
 if __name__ == "__main__": main()

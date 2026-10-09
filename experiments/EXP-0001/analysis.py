@@ -53,6 +53,8 @@ def cliffs(xs, ys):
     return sum((x > y) - (x < y) for x in xs for y in ys) / (len(xs)*len(ys))
 
 def summarize(rows):
+    if not rows:
+        raise ValueError("No scored observations; do not invent results")
     run_scores = run_mean(rows)
     models = sorted({m for m, _, _ in run_scores})
     results = {"status": "scored_observations_not_causal_certification", "models": {}}

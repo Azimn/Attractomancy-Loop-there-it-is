@@ -7,7 +7,7 @@ import sys
 
 HERE = pathlib.Path(__file__).resolve().parent
 INPUTS = ["A.txt", "B.txt", "C.txt", "D.txt", "battery.fr.json", "propositions.json", "non_extractable.json",
-          "model_config.json", "coverage.json"]
+          "model_config.json", "coverage.json", "distractor_script.fr.json"]
 FIELDS = {"condition", "model_id", "context_window", "tokenizer", "token_counts"}
 
 def digest(path):
