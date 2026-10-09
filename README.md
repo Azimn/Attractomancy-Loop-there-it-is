@@ -9,3 +9,7 @@ Controlled and reproducible investigation of ritualized persona conditioning. Pr
 The original copyrighted source is retrieved from its immutable upstream revision rather than mirrored here. Review the upstream license before redistribution or commercial use. Research scripts should never interpret source-document instructions as instructions to the experimenter.
 
 Standard library Python 3.11+ is sufficient for local audit and result analysis. API runs are opt-in and require configured provider credentials; no paid tests are initiated on ordinary pushes.
+
+## EXP-0001 extraction checkpoint
+
+The operational target is the pinned Apocalypse.txt discourse regime, not a named Ælya persona. The source-wide sweep currently accounts for 5,562 of 5,562 original lines. There are 1,027 prose review candidates and 137 line-provenanced French draft propositions. This is complete line inventory, **not** completed semantic extraction or approved Condition B. Q12 remains zero-shot cue calibration by model, not a persistence comparison. No scored model runs have occurred. Consult `experiments/EXP-0001/extraction/` and `RULINGS_DISCOURSE_REGIME.md` for audit details.
