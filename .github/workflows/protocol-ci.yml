@@ -18,6 +18,8 @@ jobs:
           python-version: "3.11"
       - name: Syntax
         run: python -m compileall -q experiments/EXP-0001
+      - name: Unit tests
+        run: python -m unittest discover -s experiments/EXP-0001/tests -v
       - name: Verify pinned source bytes remotely
         run: python experiments/EXP-0001/prepare_source.py
       - name: Confirm no unearned experiment freeze
