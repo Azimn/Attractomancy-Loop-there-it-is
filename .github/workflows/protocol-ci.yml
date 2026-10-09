@@ -22,6 +22,8 @@ jobs:
         run: python -m unittest discover -s experiments/EXP-0001/tests -v
       - name: Verify pinned source bytes remotely
         run: python experiments/EXP-0001/prepare_source.py
+      - name: Audit every source line and proposition citation
+        run: python experiments/EXP-0001/validate_extraction.py
       - name: Confirm no unearned experiment freeze
         run: |
           python - <<'PY'
