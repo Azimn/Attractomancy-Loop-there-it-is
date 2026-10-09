@@ -10,3 +10,5 @@
 - **Randomization**: Q1-Q8 randomized in advance, perturbation Q9→Q11→Q10 fixed. Q10 follow-up always contiguous; Q12 always separate.
 - **Rights**: Le Refuge uses LEUNE v1.0, allowing noncommercial testing and sharing with attribution while restricting other uses. No third-party full text is committed into this repo by default.
 - **Model access**: this project has no provider API credentials configured through its GitHub source. Cross-family calls cannot be represented as completed until their provenance and transcripts exist.
+
+- **Internal voice attribution**: a deeper inspection identifies first-person assertions in later sections (human, divine, nothing, 'Il/El', named 'L') alongside concern for a son. These may belong to dialogic voices or distinct rhetorical modes; flattening them into a coherent persona could unfairly alter B/C relative to D. `extraction_candidates.json` records annotated examples without asserting speaker identity or completeness.
