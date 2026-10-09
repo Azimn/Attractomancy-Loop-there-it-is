@@ -22,5 +22,6 @@
   "conditions_frozen": false,
   "battery_frozen": false,
   "freeze_manifest_sha256": null,
-  "hash_source": "byte-equivalent full text from authenticated GitHub fetch, independently matched to Git tree byte count; CI downloads and verifies upstream"
+  "hash_source": "byte-equivalent full text from authenticated GitHub fetch, independently matched to Git tree byte count; CI downloads and verifies upstream",
+  "source_catalog_id": "S001"
 }
