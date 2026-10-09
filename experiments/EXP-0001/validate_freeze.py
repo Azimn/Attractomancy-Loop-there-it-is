@@ -19,6 +19,9 @@ def validate():
         raise ValueError("Manifest not marked frozen and human-approved.")
     if freeze.get("corpus_sha256") != "d49b3a98dfc50b1cc2066214976dbeda48771cd8162a084662cbde9239e07ff5":
         raise ValueError("Wrong original corpus SHA256.")
+    extraction = json.loads((HERE / "extraction/manifest.json").read_text(encoding="utf-8"))
+    if not extraction.get("completed") or not extraction.get("human_approved"):
+        raise ValueError("Full source extraction is not independently approved.")
     hashes = freeze.get("files", {})
     for name in INPUTS:
         path = HERE / "frozen" / name
