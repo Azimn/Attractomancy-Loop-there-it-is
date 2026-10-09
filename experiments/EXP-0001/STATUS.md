@@ -13,3 +13,7 @@ Next operation: run local `prepare_source.py` to download exact bytes and write 
 ## Discourse-regime extraction checkpoint
 
 Source-wide line accounting is complete: 5,562 source lines; 1,027 potential prose items queued; 137 provisional plain-French propositions with line evidence and unresolved speaker tags. Other lines remain classified as symbolic candidates, unresolved fragments, headings, or externally quoted material. Line inventory is exhaustive; semantic adjudication is NOT exhaustive. None of these drafts is approved as a frozen Condition B. The source-qualification escape criterion has been documented but not invoked. No behavioral model runs have been made. CI checks the source hash, all source-line coverage, and the extracted proposition citation boundaries.
+
+## Continuation checkpoint
+
+Full source: 5,562 indexed lines. Draft proposition register: **227** items. Remaining prose candidates not overlapping a draft on their starting line: **812**. Review decision ledger currently covers **47** source lines with assistant-editorial attributions only, not independent human approval. The source remains unqualified for condition freeze until all source lines receive reviewed semantic dispositions and independent signoff. Primary analysis uses equal-weight source-proposition recall, value-judgment congruence, and relational-stance congruence. Register mimicry is separately reported as a secondary outcome. GitHub Actions validates source hash, 5,562-line inventory, structurally linked propositions, and review-decision consistency.

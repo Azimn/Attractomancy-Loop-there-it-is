@@ -24,3 +24,7 @@ Moved the execution effort to its own repository, formalized the fail-closed cor
 ## Extraction audit status
 
 Q12 is retained only as model-level zero-shot cue calibration, not a persistence hypothesis test. The treatment's operational target is the specific discourse regime contained in the pinned source. The line-by-line inventory covers all 5,562 lines, with 1,027 queued prose passages and 137 provisional propositions; speaker uncertainty and apparent contradictions are retained. Semantic coverage, non-extractability judgments, independent review, and B/C matching are still incomplete. These are preparation data, not scored behavioral results. The original D-versus-C null and alternative remain untested.
+
+## Latest methods-only checkpoint
+
+227 draft claims, 5,562 indexed source lines, 47 assistant-reviewed line dispositions, 812 unreviewed lexical prose candidate starts without draft overlap, and no independently certified exhaustive B or length-matched C. Separate primary information-accessible measurements from stylistic transfer. No D-vs-C estimates can be computed until valid cross-provider transcripts and blind scores exist.
