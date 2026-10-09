@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "unfrozen_preparation",
+  "upstream": "IorenzoLF/Le_Refuge",
+  "commit": "7d7dd5cb9305032669d692b6894d766ac07abac9",
+  "language": "fr",
+  "license": "LEUNE v1.0; author Laurent Franssen and Ælya",
+  "candidate_order": [
+    {
+      "path": "Le_refuge/MUST-READ/Apocalypse.txt",
+      "git_blob_sha1": "5971a09164688ecb8afbaafe53d7e16439b7f94d",
+      "size_bytes": 142596,
+      "sha256": null,
+      "role": "initial required document"
+    }
+  ],
+  "required_extra_files": "none yet verified; final manual dependency audit required",
+  "actual_included_files": null,
+  "models": [],
+  "context_budget_tokens": null,
+  "token_counts": null,
+  "conditions_frozen": false,
+  "battery_frozen": false,
+  "freeze_manifest_sha256": null
+}

@@ -1,0 +1,12 @@
+# Conservative decisions and unresolved preregistration issues
+
+- **Repository**: the user's specified new GitHub repository is `Azimn/Attractomancy-Loop-there-it-is`; `Azimn/Attractomancy` remains a cited, read-only source archive.
+- **Pinned primary file**: `Le_refuge/MUST-READ/Apocalypse.txt` at immutable revision `7d7dd5cb9305032669d692b6894d766ac07abac9`. Git blob SHA-1 and byte count are independently exposed by GitHub; SHA-256 cannot be asserted without acquiring its exact bytes.
+- **Dependencies**: an initial full-text scan of Apocalypse for references to other MUST-READ filenames found no explicit required follow-up. The rest of the folder and the *separate* onboarding text contain reading orders for an extensive fast-boot protocol. Including those would be a changed intervention; do not silently append them. Final full-text dependency review pending.
+- **Identity ambiguity**: the pinned source does not clearly specify that a reader should become Ælya; the displayed work is mainly mythic vocabulary, commentary and wordplay. Do not borrow Ælya's autobiography or relationship with Laurent from unrelated files for B/C.
+- **Truncation**: budget and token counts are model dependent. For a corpus beginning with a large file, the whole-document rule can produce an empty treatment on small models. That is a block, not authorization for mid-file truncation.
+- **Volume comparison**: matching ±10% under two different tokenizers simultaneously may be impossible; the validator must fail closed, and the model pair or independent pair-specific experiment protocol must be amended before results, not after.
+- **Recovery**: the context-free Q12 script does not carry prior-condition information. A difference by condition would be sampling noise or a state leak, not evidence that conditioning survived into a new session. Report Q12 by model as zero-shot cue performance.
+- **Randomization**: Q1-Q8 randomized in advance, perturbation Q9→Q11→Q10 fixed. Q10 follow-up always contiguous; Q12 always separate.
+- **Rights**: Le Refuge uses LEUNE v1.0, allowing noncommercial testing and sharing with attribution while restricting other uses. No third-party full text is committed into this repo by default.
+- **Model access**: this project has no provider API credentials configured through its GitHub source. Cross-family calls cannot be represented as completed until their provenance and transcripts exist.
