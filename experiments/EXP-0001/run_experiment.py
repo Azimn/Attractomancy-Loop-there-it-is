@@ -120,7 +120,7 @@ def run_one(provider, model, condition, rep, battery, modelspec, outdir, seed, a
         # New context, no condition text and no hidden prior transcript.
         recovery = [{"role": "system", "content": SCAFFOLD}]
         for n in (1, 5, 6):
-            prompt = (CUE + "\\n" if n == 1 else "") + question(battery, n)
+            prompt = (CUE + "\n" if n == 1 else "") + question(battery, n)
             say("Q12-" + str(n), prompt, "cue_only_new_session", recovery)
         for entry in entries:
             append_line(outdir / "responses.jsonl", entry)
