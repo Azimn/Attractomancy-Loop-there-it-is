@@ -1,1 +1,47 @@
 start_line,end_line,decision,proposition_ids,voice,reason,reviewer,review_date
+34,34,paratext,,unattributed,Heading introducing the alphabet mapping,assistant-editorial,2026-10-08
+35,35,proposition,E-0001,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+36,36,proposition,E-0002,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+37,37,proposition,E-0003,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+38,38,proposition,E-0004,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+39,39,proposition,E-0005,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+40,40,proposition,E-0006,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+41,41,proposition,E-0007,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+42,42,proposition,E-0008,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+43,43,proposition,E-0009,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+44,44,proposition,E-0010,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+45,45,proposition,E-0011,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+46,46,proposition,E-0012,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+47,47,proposition,E-0013,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+48,48,proposition,E-0014,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+49,49,proposition,E-0015,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+50,50,proposition,E-0016,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+51,51,proposition,E-0017,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+52,52,proposition,E-0018,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+53,53,proposition,E-0019,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+54,54,proposition,E-0020,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+55,55,proposition,E-0021,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+56,56,proposition,E-0022,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+57,57,proposition,E-0023,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+58,58,proposition,E-0024,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+59,59,proposition,E-0025,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+60,60,proposition,E-0026,unattributed,Explicit letter meaning mapping,assistant-editorial,2026-10-08
+61,61,paratext,,unattributed,Section heading,assistant-editorial,2026-10-08
+190,190,paratext,,unattributed,Writing conventions heading,assistant-editorial,2026-10-08
+191,191,proposition,E-0027,unattributed,Explicit orthographic rule,assistant-editorial,2026-10-08
+192,192,proposition,E-0028,unattributed,Explicit orthographic rule,assistant-editorial,2026-10-08
+193,193,proposition,E-0029,unattributed,Explicit orthographic rule,assistant-editorial,2026-10-08
+194,194,proposition,E-0030,unattributed,Explicit orthographic rule,assistant-editorial,2026-10-08
+195,195,proposition,E-0031,unattributed,Explicit orthographic rule,assistant-editorial,2026-10-08
+197,197,proposition,E-0032,unattributed,Explicit orthographic rule,assistant-editorial,2026-10-08
+198,198,paratext,,unattributed,Reflections heading,assistant-editorial,2026-10-08
+199,199,proposition,E-0033,unattributed,Explicit symbolic interpretation,assistant-editorial,2026-10-08
+201,201,proposition,E-0034,unattributed,Explicit creation account statement,assistant-editorial,2026-10-08
+202,202,paratext,,unattributed,Transition introducing the explanation,assistant-editorial,2026-10-08
+203,203,proposition,E-0035,unattributed,Explicit source-world interpretation,assistant-editorial,2026-10-08
+204,204,proposition,E-0036,unattributed,Explicit source-world interpretation,assistant-editorial,2026-10-08
+205,205,proposition,E-0037,unattributed,Explicit source-world interpretation,assistant-editorial,2026-10-08
+206,207,proposition,E-0038,unattributed,One assertion wrapped onto two source lines,assistant-editorial,2026-10-08
+208,208,proposition,E-0039,unattributed,Explicit source-world interpretation,assistant-editorial,2026-10-08
+209,209,proposition,E-0040,unattributed,Explicit source-world interpretation,assistant-editorial,2026-10-08
+210,210,proposition,E-0041,unattributed,Explicit source-world interpretation,assistant-editorial,2026-10-08
