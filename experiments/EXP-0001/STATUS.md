@@ -9,3 +9,7 @@ Verified: SHA-256 `d49b3a98dfc50b1cc2066214976dbeda48771cd8162a084662cbde9239e07
 **Scientific hold:** The primary candidate appears to be a symbolic theological text, not an Ælya-specific persona-conditioning treatment. If an explicit identity profile cannot be extracted without borrowing from other Le Refuge documents, the hypothesis has no operational target for several prompts. Do not manufacture claims.
 
 Next operation: run local `prepare_source.py` to download exact bytes and write audit output; manually audit the resulting source and dependencies. The runner must not activate until a frozen condition manifest is complete.
+
+## Discourse-regime extraction checkpoint
+
+Source-wide line accounting is complete: 5,562 source lines; 1,027 potential prose items queued; 137 provisional plain-French propositions with line evidence and unresolved speaker tags. Other lines remain classified as symbolic candidates, unresolved fragments, headings, or externally quoted material. Line inventory is exhaustive; semantic adjudication is NOT exhaustive. None of these drafts is approved as a frozen Condition B. The source-qualification escape criterion has been documented but not invoked. No behavioral model runs have been made. CI checks the source hash, all source-line coverage, and the extracted proposition citation boundaries.
