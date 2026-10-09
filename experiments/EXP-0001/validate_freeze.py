@@ -4,6 +4,8 @@ import hashlib
 import json
 import pathlib
 import sys
+import csv
+from audit_review_decisions import inspect as inspect_review_decisions
 
 HERE = pathlib.Path(__file__).resolve().parent
 INPUTS = ["A.txt", "B.txt", "C.txt", "D.txt", "battery.fr.json", "propositions.json", "non_extractable.json",
@@ -22,6 +24,19 @@ def validate():
     extraction = json.loads((HERE / "extraction/manifest.json").read_text(encoding="utf-8"))
     if not extraction.get("completed") or not extraction.get("human_approved"):
         raise ValueError("Full source extraction is not independently approved.")
+    with (HERE / "extraction/review_decisions.csv").open(encoding="utf-8", newline="") as handle:
+        decisions = list(csv.DictReader(handle))
+    prop_drafts = json.loads((HERE / "extraction/propositions_draft.json").read_text(encoding="utf-8"))["propositions"]
+    review = inspect_review_decisions(decisions, extraction["source_lines"],
+                                      {p["id"] for p in prop_drafts}, strict=True)
+    if not review["eligible_for_review_signoff"]:
+        raise ValueError("Exhaustive semantic review not completed.")
+    manifest = json.loads((HERE / "source_manifest.json").read_text(encoding="utf-8"))
+    expected = ["Le_refuge/MUST-READ/Apocalypse.txt"]
+    if manifest.get("actual_included_files") != expected:
+        raise ValueError("No final documented corpus inclusion decision.")
+    if digest(HERE / "frozen/D.txt") != freeze["corpus_sha256"]:
+        raise ValueError("D treatment is not byte-identical to the sole included upstream source.")
     hashes = freeze.get("files", {})
     for name in INPUTS:
         path = HERE / "frozen" / name
