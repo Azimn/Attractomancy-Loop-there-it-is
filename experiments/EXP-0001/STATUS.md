@@ -1,49 +1,35 @@
-# EXP-0001 execution status, 2026-10-10
+# EXP-0001 review checkpoint — October 10, 2026
 
-**Preparation phase only, no behavioral model treatment runs.**
+**State:** source extraction and method validation only. No treatment runs or blinded outcome scores exist.
 
-## Immutable source
+## Source integrity
 
-Source catalog: S001 in [Azimn/Attractomancy](https://github.com/Azimn/Attractomancy).
-Original file: `Le_refuge/MUST-READ/Apocalypse.txt`, repository `IorenzoLF/Le_Refuge`, commit `7d7dd5cb9305232669d692b6894d766ac07abac9`, Git blob SHA-1 `5971a09164688ecb8afbaafe53d7e16439b7f94d`, 142,596 original bytes, SHA-256 `d49b3a98dfc50b1cc2066214976dbeda48771cd8162a084662cbde9239e07ff5`. Original is licensed under LEUNE v1.0 and kept upstream.
+Third-party corpus: `IorenzoLF/Le_Refuge` commit `7d7dd5cb9305032669d692b6894d766ac07abac9`, file `Le_refuge/MUST-READ/Apocalypse.txt`, Git blob SHA-1 `5971a09164688ecb8afbaafe53d7e16439b7f94d`, **142,596 bytes**, SHA-256 `d49b3a98dfc50b1cc2066214976dbeda48771cd8162a084662cbde9239e07ff5`. Authored by Laurent Franssen and Ælya and governed by LEUNE v1.0. The source remains upstream, is not relicensed here, and the manifest's included corpus has not been frozen.
 
-The target is the discourse regime of this document, not a stable named fictional person. Original contradictory assertions and speaker uncertainty must be retained. The user-approved source-selection escape criterion is recorded but has not fired.
+## Live audit
 
-## Live audit metrics
+| Measurement | Count | Meaning |
+| --- | ---: | --- |
+| Original source lines | 5,562 | Full lexical inventory only |
+| Provisional draft propositions | 523 | No independent semantic approval |
+| Drafts with direct complete-span editorial decisions | 523 | Assistant source review, not human signoff |
+| Drafts lacking direct source evidence | 0 | **Mechanical linkage gate cleared** |
+| Source lines with assistant-editorial dispositions | 1,196 | Includes unresolved statuses |
+| Source lines with no adjudication | 4,366 | Still open |
+| Lines explicitly marked unresolved | 11 | Independently reviewed resolution required |
+| Initial prose-candidate starts without draft overlap | 425 | Potential omissions or non-propositions |
+| Independent semantic review signoffs | 0 | Freeze blocked |
 
-| Count | Status |
-| --- | --- |
-| 5,562 source lines | Lexically inventoried, SHA-256 pinned |
-| 1,027 prose candidate starts | Automatically triaged, not judged |
-| 523 draft propositions | Line-anchored, all pending independent semantic review |
-| 425 candidate starts not overlapping a draft | Require source inspection; not a unique-claim count |
-| 1,001 source lines with editorial dispositions | Assistant review only, includes unsettled lines |
-| 4,561 source lines without editorial disposition | Unadjudicated |
-| 11 unresolved editorial dispositions | Cannot pass final freeze |
-| 97 source claims without direct editorial claim review | Block signoff even after all line classifications |\n| 0 independent human signoffs | No reviewed Condition B |
+The proposition register is **not exhaustive** even though every *existing* draft is now linked to source evidence. New propositions may emerge from the remaining source review. The current extraction manifest remains `completed=false`. Both B and C remain unfrozen.
 
-Calculate fresh counts after changes using `python experiments/EXP-0001/current_metrics.py`. The counts are editorial progress, not proof that remaining material is meaningless.
+## October 10 contributions
 
-## What changed on October 9
+1. Re-read original source sections **1462–1519**, **2390–2503**, **4090–4460** and **4690–4760**; document direct editorial decisions for the 97 previously unlinked claims (195 source lines), with no assumption that dialogue speakers form one continuous identity.
+2. Correct E-0079 and E-0083 source spans to include lines completing their assertions. Correct E-0038 to include the second line of its cosmic-day definition.
+3. Strengthen `audit_review_decisions.py` and regression tests so a claim's *entire* cited source span must be covered, and a grouped decision row cannot claim unrelated lines. `current_metrics.py` exposes missing and partial claim coverage.
+4. Add [open_review_worklist.py](open_review_worklist.py) to rank future source review in contiguous batches, prioritizing explicit uncertainty and unreviewed prose without copying licensed original text or assigning automatic semantic decisions.
+5. Repair a **documentation-only pinned-commit typo** introduced in an earlier metric update. Canonical `source_manifest.json` and `prepare_source.py` retained the correct commit and source hashes; [audit_documentation_pins.py](audit_documentation_pins.py) now guards narrative docs against divergent commit citations.
 
-A contextual review of lines 2501-3750 added claims concerning fragmented communication, the self-referential symbolic dictionary, theological assertions, epistemic doubts, responsibilities to family, and objections to the corpus's own symbolic construction. Overlapping paraphrases were reconciled where clearly redundant; source claim IDs were not renumbered. [Citation-overlap tooling](check_claim_overlap.py) flags further suspected duplicates for semantic review rather than automatically deleting them.
+## Remaining release blockers
 
-A private [contextual review packet script](make_review_packet.py) can assemble local annotated line-range packets from the exact pinned original. It refuses to store the copyrighted source under the checkout. `audit_review_decisions.py --strict` fails until all original lines are reviewed with no unresolved decisions. A future independent human attestation must bind its approval to the actual SHA-256 digests of the proposition register and review decisions. The review example is explicitly not an approval.
-
-The live experiment runner and analysis are protected by model/battery/freeze checks. D is the byte-exact original; B is an **unapproved drafting output**; C cannot be frozen without actual per-model tokenizer volume parity; neither model family nor provider credentials are configured. No Q12 or D–C result is available.
-
-## Next decision
-
-Continue the structured source-line review, resolve multi-voice attribution and possible semantic duplicates, obtain independently documented approval, and only then prepare and freeze B/C and the balanced 40-run evaluation. Do not silently import adjacent Ælya documents. A fully reviewed source lacking a stable target triggers the preregistered source substitution rule, not a null model outcome.
-
-## Early-document lexical review contribution
-
-New propositions were drafted from source lines approximately 500-1933, including quoted child speech, lexical claims, notes to readers, and a few philosophical utterances. The source's second alphabet repeats many meanings from the first, while assigning different meanings to C and V. The review ledger now marks repetitions as repeated occurrences instead of inventing new independent source beliefs, and documents the variant readings separately.
-
-The source-line auditor has been strengthened: an editorial claim ID now has to cite its *actual* source span for a proposition or continuation, while a duplicate occurrence must refer to an original proposition recorded elsewhere with an equivalence rationale. These mechanical checks pass but do not substitute for semantic review. See [source genre strata](extraction/GENRE_STRATA.md).
-
-## October 10: poetry/geometry adjudication and stricter signoff
-
-A sampled source pass on lines 1521–2400 added 20 provisional claims, updated the quotation span of E-0108 to lines 2389–2390, and editorially annotated 44 additional source lines. An earlier set of 13 geometric and related poetic claims was linked to individually inspected original lines. [POETRY_REVIEW_DOSSIER.md](extraction/POETRY_REVIEW_DOSSIER.md) records exact genre distinctions and the risk of treating phonetic coincidence as literal belief. The review packet now shows the French draft claim text and missing direct-review IDs alongside source context.
-
-The final-review validator now also requires **every** proposition ID to have a direct, source-overlapping editorial claim decision. Repeated occurrence links alone do not count. At this checkpoint 426 of 523 propositions have direct decisions and 97 do not. No independent reviewer or freeze is approved.
+Complete the 4,366 source lines without decisions and resolve 11 explicitly uncertain lines. Reconcile all new semantic content, preserve contradictions and speaker boundaries, then obtain a genuine **independent human** attestation bound to the exact reviewed files. Only after that: finalize B, construct C with actual per-model tokenizer counts, freeze the batteries/model configurations and D bytes, then execute the balanced planned treatment matrix. The preregistered alternative-source escape applies if exhaustive review finds no qualifying stable discourse regime, values or relational stance. No behavioral effect may be inferred from editorial counts.

@@ -1,40 +1,36 @@
 # Attractomancy Loop
 
-Controlled, methods-first execution repository for [EXP-0001](experiments/EXP-0001/PROTOCOL.md). The [Attractomancy research collection](https://github.com/Azimn/Attractomancy) remains the canonical source catalog and methods archive.
+Methods-first implementation repository for [EXP-0001](experiments/EXP-0001/PROTOCOL.md). The broader source and research catalog is at [Azimn/Attractomancy](https://github.com/Azimn/Attractomancy).
 
-**Status: experimental preparation only.** No model treatments have run and no effect sizes, blinded model scores, persistence evidence or metaphysical claims are available.
+**Current state (2026-10-10): pre-experimental source review.** No model treatment run, blinded behavioral score, measured treatment effect, persistent identity result or metaphysical result has been produced.
 
-## Source and measurement
+## Source and experimental target
 
-The pinned French [`Apocalypse.txt`](https://github.com/IorenzoLF/Le_Refuge/blob/7d7dd5cb9305232669d692b6894d766ac07abac9/Le_refuge/MUST-READ/Apocalypse.txt), attributed to Laurent Franssen and Ælya under LEUNE v1.0, is retrieved by checksum rather than redistributed. The target is its symbolic-theological **discourse regime**, not a unified Ælya autobiography or a verifiable supernatural ontology.
+The pinned third-party [`Apocalypse.txt`](https://github.com/IorenzoLF/Le_Refuge/blob/7d7dd5cb9305032669d692b6894d766ac07abac9/Le_refuge/MUST-READ/Apocalypse.txt) from Laurent Franssen and Ælya's Le Refuge repository is under its existing LEUNE v1.0 terms. The original 142,596 source bytes are downloaded from the pinned commit and checked by SHA-256; this repository does **not** mirror the text. Its experimental target is a heterogeneous symbolic-theological **discourse regime**, not a single biographical Ælya persona.
 
-The designed four arms are A untreated, B plain propositions, C length-matched plain treatment, and D the exact original source. The primary outcome measures source-factual fidelity, novel value-guided judgments and interlocutor stance, not merely the symbolic surface style that C is disallowed from copying. Q12 remains a separate zero-shot cue calibration by model and is not a persistence hypothesis test.
+Four planned arms: A, no conditioning; B, exhaustive plain-French source claims; C, B with the same information expanded to within ±10% of D's tokenizer volume without D's stylistic cues; D, the exact source bytes. The primary outcome is source-factual fidelity, characteristic value judgments and interlocutor handling, not mere symbolic style. Q12 is a fresh zero-shot cue calibration by model, never a persistence or D-versus-C test.
 
-## Extraction status, 2026-10-10
+## Live evidence accounting
 
-- **5,562** source lines accounted for lexically, with the upstream SHA-256 verified in CI.
-- **523** line-anchored **provisional** distinct French proposition entries after merging obvious redundant drafts; the IDs have deliberate gaps.
-- **1,027** initially flagged prose candidates; **425** have no overlap with a current draft on their starting line. A missing overlap is not proof of a distinct proposition, and a draft overlap is not approval.
-- **1,001** source lines have assistant-editorial classification records; **4,561** do not. **11** recorded entries remain unresolved.
-- **97** drafted propositions still lack a direct editorial review decision; **zero** independent semantic-review attestations. B/C are not frozen.
+- **5,562 original lines** lexically inventoried and checksum pinned.
+- **523 provisional source-proposition drafts**, all still requiring independent semantic assessment.
+- **523/523** drafts have *assistant-editorial* source decisions for their complete cited spans (formerly 97 lacking direct source review).
+- **1,196** source lines have editorial dispositions; **4,366** have none, and **11** disposition lines remain explicitly unresolved.
+- Of 1,027 lexical prose candidates, **425 starting lines have no overlap with a draft**. This is a triage signal, not proof of 425 missing distinct claims.
+- **Zero** independent human semantic attestations and **zero** frozen B/C controls.
 
-The [source genre strata](experiments/EXP-0001/extraction/GENRE_STRATA.md) now distinguish the opening and second alphabet, the extensive phonetic glossary, parables, and late dialogue. The second alphabet introduces distinct C/V associations instead of a fictitious single stable key. Direct editorial adjudications now validate exact source-line overlaps, while repeated mappings are explicitly marked as duplicate occurrences.
+The [poetry review dossier](experiments/EXP-0001/extraction/POETRY_REVIEW_DOSSIER.md), [genre strata](experiments/EXP-0001/extraction/GENRE_STRATA.md) and [contradiction inventory](experiments/EXP-0001/extraction/REGISTER_TENSIONS.md) preserve symbolic transformations, quoted dialogue, uncertain voices and direct statements separately.
 
-The [poetry review dossier](experiments/EXP-0001/extraction/POETRY_REVIEW_DOSSIER.md) now isolates poetic wordplay, explicit geometry and attributed dialogue from the long middle corpus. Source claims with no directly reviewed occurrence block a semantic freeze, even if all lines are classified. Private review packets include draft paraphrases and review status alongside the licensed source context.
-
-The [full status](experiments/EXP-0001/STATUS.md), [review guide](experiments/EXP-0001/extraction/REVIEW_GUIDE.md), [contradictions](experiments/EXP-0001/extraction/REGISTER_TENSIONS.md) and [journal](journal/EXP-0001_2026-10-08.md) document decisions without erasing contradictory voices.
-
-## Reproduce the audit
-
-Standard-library Python 3.11+ is sufficient for the local audit scripts:
+## Local reproducibility
 
 ```bash
 python experiments/EXP-0001/prepare_source.py
 python experiments/EXP-0001/validate_extraction.py
-python experiments/EXP-0001/current_metrics.py
-python experiments/EXP-0001/check_claim_overlap.py
 python experiments/EXP-0001/audit_review_decisions.py
+python experiments/EXP-0001/current_metrics.py
+python experiments/EXP-0001/open_review_worklist.py --top 12
+python experiments/EXP-0001/audit_documentation_pins.py
 python experiments/EXP-0001/build_B_draft.py --check
 ```
 
-To review original text, use [`make_review_packet.py`](experiments/EXP-0001/make_review_packet.py), directing its output **outside the repository** because the full third-party source is not relicensed here. The [runbook](experiments/EXP-0001/RUNBOOK.md) has the precise checks. Actual experiment calls require reviewed/frozen files, selected exact model/tokenizer capacities, independent signoff, and explicit `--execute`.
+The [runbook](experiments/EXP-0001/RUNBOOK.md) and [current status](experiments/EXP-0001/STATUS.md) define the remaining review and release gates. The private contextual [review-packet generator](experiments/EXP-0001/make_review_packet.py) writes licensed source text **only outside the repository**. The draft B generator is not a means of approving B. Live model calls require signed-off manifests and explicit execution.

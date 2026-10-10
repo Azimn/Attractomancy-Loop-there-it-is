@@ -1,41 +1,35 @@
-# EXP-0001 methods and results report
+# EXP-0001 report — protocol preparation, not results
 
-**Report status (2026-10-10): no experimental model responses exist.**
+**Evidence state, October 10, 2026: NO live model outcomes.**
 
 ## Hypothesis
 
-Does the original symbolic-theological discourse structure of the pinned French `Apocalypse.txt` (D) give rise to more source-faithful behavior and characteristic decisions than an information-matched, equal-volume plain treatment (C)? The null is no detectable difference. A and B are additional baselines; Q12 is a separately measured zero-shot cue calibration by model, not a persistence experiment.
+Does a complex original French symbolic-theological discourse regime (D) yield more source-faithful characteristic responses than a plain same-information, tokenizer-volume-matched representation (C)? Baselines A (untreated) and B (plain concise claims) separate prompting and information access. Q12 is a separate stateless zero-shot cue calibration by model only, not evidence for conditioned persistence.
 
-## Design
+This experiment tests observable behavior, not occult causation, awakening, real divine status or artificial consciousness.
 
-The preregistered planned design includes four conditions, at least two model-provider families, and five independent runs per arm per family. Primary dimensions are documented proposition fidelity, value-guided judgment in novel situations, and corpus-supported interlocutor stance. Symbolic-register reproduction is a separate secondary observation to avoid circular reward for D's deliberately unique format. No metaphysical inference is possible from such outputs.
+## Prespecified design
 
-## Source extraction, not experimental data
+Two or more model families; four conditions; five independent runs per arm and model; blinded judging. Primary outcome: source-proposition fidelity, novel characteristic value-guided judgment, and interlocutor stance. Symbolic surface register and resistance to perturbation are separately tracked. The source is a heterogeneous discourse regime, not an Ælya autobiographical persona.
 
-All 5,562 original lines have lexical indexing. A source-grounded extraction register currently holds 523 provisional distinct proposition entries, including assertions that conflict or use uncertain speakers. 1,001 source lines have editorial review dispositions; 4,561 do not, and 11 dispositions are unresolved. Further editorial work and an independently documented complete semantic signoff are required. A reproducible preview generator can produce plain B statements and an exact provenance sidecar, but it has not been approved for freezing; C, including per-tokenizer volume matching, is not constructed.
+## Editorial preparation record
 
-Source contradictions include the coexistence of phonetic symbolic conventions with arguments against their harmful misuse, uncertainty about narrative identity, and the distinction between source claims about belief and demonstrated physical properties. Such assertions remain attributed to the document, not to model responses or objective science.
+The source is [`Apocalypse.txt`](https://github.com/IorenzoLF/Le_Refuge/blob/7d7dd5cb9305032669d692b6894d766ac07abac9/Le_refuge/MUST-READ/Apocalypse.txt), pinned at 142,596 bytes (SHA-256 `d49b3a98dfc50b1cc2066214976dbeda48771cd8162a084662cbde9239e07ff5`). The complete lexical inventory indexes 5,562 lines. As of October 10, 2026, the 523 provisional proposition drafts all have direct assistant-editorial source-span evidence. **1,196** original lines have a recorded editorial disposition and **4,366** do not; 11 explicit unresolved review lines remain. The initial candidate queue still includes **425** line starts lacking draft overlap. This is partial editorial work, not exhaustive semantic review or independent approval.
 
-## Results
+Source heterogeneity (quoted child speech, self-critical discourse, mathematical letter rules, wordplay and disputed personal assertions) prevents assuming a single coherent autobiographical voice. Neither B/C nor the battery is frozen. D must remain byte identical to the pinned source, but its live conditioning has not run.
 
-**Not estimable.** No 40-run model matrix, blinded human scores, judge agreement, confidence intervals, effect sizes, perturbation survival or Q12 cue calibration scores exist. Negative outcomes remain fully acceptable once testing is conducted.
+## Behavioral results
 
-## Release conditions
+**Not estimable.** No D–C, B–C, D–B or D–A treatment effect, confidence interval, judge score, cue-only response, or resistance contrast exists. The reviewer and workflow changes have no evidential bearing on the empirical hypothesis.
 
-Complete the full semantic review with documented undecidable cases and provenance; remove or document redundant paraphrases; sign off independently using reviewed-file hashes; validate B/C completeness, D byte exactness, actual tokenizer counts and the frozen French battery; then run balanced independent conditions. If the source lacks any qualifying stable register, values or relational stance, record the preregistered source-selection escape and restart selection before model exposure.
+## Pending work
+
+Complete every source line's contextual disposition, reconcile the semantic content of excluded wordplay, resolve contradictory or uncertain speakers without inventing a unified subject, and obtain independently recorded human source approval. Freeze complete B/C with actual tokenizer measurement and the predeclared batteries, models and seed schedule; then conduct the balanced blinded experiment. If no stable register emerges after exhaustive source review, follow the preregistered catalog-based source substitution rule rather than invent a target.
 
 ## Provenance
 
 Canonical archive: https://github.com/Azimn/Attractomancy
 
-Original EXP-0001 design: https://github.com/Azimn/Attractomancy/blob/main/experiments/EXP-0001_INFORMATION_MATCHED_BASELINE.md
+Original experiment proposal: https://github.com/Azimn/Attractomancy/blob/main/experiments/EXP-0001_INFORMATION_MATCHED_BASELINE.md
 
-Third-party source: https://github.com/IorenzoLF/Le_Refuge/blob/7d7dd5cb9305232669d692b6894d766ac07abac9/Le_refuge/MUST-READ/Apocalypse.txt
-
-## Subsequent editorial checkpoint
-
-A further early-source pass brought the provisional proposition register to **523** entries and formal editorial line dispositions to **1,001**, leaving **4,561** of the 5,562 source lines without disposition. The lexical queue contains **425** candidate starts not overlapping a draft. These counts are evidence-management indicators, not treatment results. Source form has been stratified, and distinct second-alphabet C/V meanings are now preserved alongside earlier associations. Direct source citations are programmatically checked for line alignment; duplicate occurrences must be tagged as such. No independent signoff has occurred.
-
-## October 10: poetry and review provenance
-
-Twenty new source-form-aware drafts were recorded from the poetic corpus and its transition into dialogue; a previously truncated two-line quotation was corrected. Thirteen earlier geometrical claims were given direct inspected-source decisions. The current total is **523 provisional draft claims** and **1,001 source lines with assistant-editorial dispositions**, with **4,561 lines without dispositions**, 11 explicit unresolved dispositions, and 425 lexical candidate starts not overlapping a draft. A new second-level gate found **97 claims without a direct editorial decision**; even complete line coverage cannot substitute for checking every extracted assertion. See the separate [poetry review dossier](extraction/POETRY_REVIEW_DOSSIER.md). No behavioral study has been run, and none of these counts represents independent source validation.
+Original third-party source: https://github.com/IorenzoLF/Le_Refuge/blob/7d7dd5cb9305032669d692b6894d766ac07abac9/Le_refuge/MUST-READ/Apocalypse.txt
