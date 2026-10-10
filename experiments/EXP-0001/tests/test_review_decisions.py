@@ -28,6 +28,21 @@ class ReviewTests(unittest.TestCase):
     def test_no_automatic_symbol_rejection(self):
         with self.assertRaises(ValueError):
             audit.inspect([row(1,1,"nonextractable_symbolic",reason="")],1,{"E-0001"})
+    def test_wrong_claim_line_blocked(self):
+        with self.assertRaises(ValueError):
+            audit.inspect([row(5,5,"proposition","E-0001")],5,{"E-0001"},proposition_spans={"E-0001":(1,1)})
+    def test_duplicate_from_other_source_line_accepted(self):
+        result=audit.inspect([row(1,1,"proposition","E-0001"),
+                              row(2,2,"duplicate_proposition","E-0001",reason="Repeated symbolic alphabet meaning")],
+                             2,{"E-0001"},True,proposition_spans={"E-0001":(1,1)})
+        self.assertTrue(result["eligible_for_review_signoff"])
+    def test_duplicate_claim_on_original_line_blocked(self):
+        with self.assertRaises(ValueError):
+            audit.inspect([row(1,1,"duplicate_proposition","E-0001",reason="Same letter mapping")],
+                          1,{"E-0001"},proposition_spans={"E-0001":(1,1)})
+    def test_nonclaim_with_claim_id_blocked(self):
+        with self.assertRaises(ValueError):
+            audit.inspect([row(1,1,"paratext","E-0001")],1,{"E-0001"})
     def test_unresolved_blocks_strict(self):
         with self.assertRaises(ValueError):
             audit.inspect([row(1,1,"unresolved")],1,{"E-0001"},True)
