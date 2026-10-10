@@ -13,10 +13,12 @@ The designed four arms are A untreated, B plain propositions, C length-matched p
 ## Extraction status, 2026-10-09
 
 - **5,562** source lines accounted for lexically, with the upstream SHA-256 verified in CI.
-- **471** line-anchored **provisional** distinct French proposition entries after merging obvious redundant drafts; the IDs have deliberate gaps.
-- **1,027** initially flagged prose candidates; **435** have no overlap with a current draft on their starting line. A missing overlap is not proof of a distinct proposition, and a draft overlap is not approval.
-- **827** source lines have assistant-editorial classification records; **4,735** do not. **11** recorded entries remain unresolved.
+- **503** line-anchored **provisional** distinct French proposition entries after merging obvious redundant drafts; the IDs have deliberate gaps.
+- **1,027** initially flagged prose candidates; **429** have no overlap with a current draft on their starting line. A missing overlap is not proof of a distinct proposition, and a draft overlap is not approval.
+- **943** source lines have assistant-editorial classification records; **4,619** do not. **11** recorded entries remain unresolved.
 - **Zero** independent semantic-review attestations. B/C are not frozen.
+
+The [source genre strata](experiments/EXP-0001/extraction/GENRE_STRATA.md) now distinguish the opening and second alphabet, the extensive phonetic glossary, parables, and late dialogue. The second alphabet introduces distinct C/V associations instead of a fictitious single stable key. Direct editorial adjudications now validate exact source-line overlaps, while repeated mappings are explicitly marked as duplicate occurrences.
 
 The [full status](experiments/EXP-0001/STATUS.md), [review guide](experiments/EXP-0001/extraction/REVIEW_GUIDE.md), [contradictions](experiments/EXP-0001/extraction/REGISTER_TENSIONS.md) and [journal](journal/EXP-0001_2026-10-08.md) document decisions without erasing contradictory voices.
 

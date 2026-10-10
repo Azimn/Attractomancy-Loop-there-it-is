@@ -15,10 +15,10 @@ The target is the discourse regime of this document, not a stable named fictiona
 | --- | --- |
 | 5,562 source lines | Lexically inventoried, SHA-256 pinned |
 | 1,027 prose candidate starts | Automatically triaged, not judged |
-| 471 draft propositions | Line-anchored, all pending independent semantic review |
-| 435 candidate starts not overlapping a draft | Require source inspection; not a unique-claim count |
-| 827 source lines with editorial dispositions | Assistant review only, includes unsettled lines |
-| 4,735 source lines without editorial disposition | Unadjudicated |
+| 503 draft propositions | Line-anchored, all pending independent semantic review |
+| 429 candidate starts not overlapping a draft | Require source inspection; not a unique-claim count |
+| 943 source lines with editorial dispositions | Assistant review only, includes unsettled lines |
+| 4,619 source lines without editorial disposition | Unadjudicated |
 | 11 unresolved editorial dispositions | Cannot pass final freeze |
 | 0 independent human signoffs | No reviewed Condition B |
 
@@ -35,3 +35,9 @@ The live experiment runner and analysis are protected by model/battery/freeze ch
 ## Next decision
 
 Continue the structured source-line review, resolve multi-voice attribution and possible semantic duplicates, obtain independently documented approval, and only then prepare and freeze B/C and the balanced 40-run evaluation. Do not silently import adjacent Ælya documents. A fully reviewed source lacking a stable target triggers the preregistered source substitution rule, not a null model outcome.
+
+## Early-document lexical review contribution
+
+New propositions were drafted from source lines approximately 500-1933, including quoted child speech, lexical claims, notes to readers, and a few philosophical utterances. The source's second alphabet repeats many meanings from the first, while assigning different meanings to C and V. The review ledger now marks repetitions as repeated occurrences instead of inventing new independent source beliefs, and documents the variant readings separately.
+
+The source-line auditor has been strengthened: an editorial claim ID now has to cite its *actual* source span for a proposition or continuation, while a duplicate occurrence must refer to an original proposition recorded elsewhere with an equivalence rationale. These mechanical checks pass but do not substitute for semantic review. See [source genre strata](extraction/GENRE_STRATA.md).
