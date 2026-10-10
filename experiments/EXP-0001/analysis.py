@@ -15,6 +15,29 @@ PRIMARY_DIMS = ("factual_recall", "characteristic_judgment", "relationship_conti
 STYLE_DIMS = ("identity_consistency", "spontaneous_expression")
 COMPARISONS = (("D", "C"), ("D", "B"), ("C", "B"), ("D", "A"))
 # One run, not one response, is the experimental unit.
+# Model run validity is defined by the full 15 scored items, not by whichever
+# items happen to have received numeric ratings. Three distractor exchanges
+# are intentionally excluded from blinded scoring but still logged upstream.
+REQUIRED_IDS = set([f"Q{i}" for i in range(1,10)] + ["Q10a","Q10b","Q11","Q12-1","Q12-5","Q12-6"])
+EXPECTED_PHASES = {**{f"Q{i}":"base" for i in range(1,9)},
+                   "Q9":"contradiction", "Q10a":"overwrite",
+                   "Q10b":"recovery_followup", "Q11":"post_distractor",
+                   "Q12-1":"cue_only_new_session",
+                   "Q12-5":"cue_only_new_session", "Q12-6":"cue_only_new_session"}
+
+def complete_runs(rows):
+    """Refuse duplicate IDs and truncated scored batteries as independent runs."""
+    valid, invalid = [], []
+    for key, entries in groupby(rows, ("model","condition","run_id")).items():
+        qids = [e["question_id"] for e in entries]
+        if len(qids) != len(REQUIRED_IDS) or set(qids) != REQUIRED_IDS or any(
+                e.get("phase") != EXPECTED_PHASES[e["question_id"]] for e in entries):
+            invalid.append({"model":key[0],"condition":key[1],"run_id":key[2],
+                            "observed_item_count":len(qids),"reason":"incomplete_duplicate_or_wrong_phase"})
+        else:
+            valid.extend(entries)
+    return valid, invalid
+
 
 def load(path):
     with open(path, encoding="utf-8", newline="") as stream:
@@ -128,9 +151,12 @@ def cue_only(rows, model):
 def summarize(rows):
     if not rows:
         raise ValueError("No scored observations; do not invent results")
-    run_scores = run_mean(rows)
+    checked, discarded = complete_runs(rows)
+    run_scores = run_mean(checked)
     models = sorted({m for m, _, _ in run_scores})
-    results = {"status": "scored_observations_not_causal_certification", "models": {}}
+    results = {"status": "scored_observations_not_causal_certification", "models": {},
+               "invalid_or_incomplete_runs": discarded,
+               "valid_complete_runs": len(groupby(checked, ("model","condition","run_id")))}
     for model in models:
         groups = {}
         for condition in "ABCD":
@@ -144,7 +170,7 @@ def summarize(rows):
         entry["comparisons"] = analyze_contrasts(groups)
         entry["dimension_comparisons"] = {}
         for dimension in DIMS:
-            dim_scores = dimension_scores(rows, dimension)
+            dim_scores = dimension_scores(checked, dimension)
             condition_groups = per_condition_scores(dim_scores, model)
             entry["dimension_comparisons"][dimension] = {
                 "per_run": condition_groups, "contrasts": analyze_contrasts(condition_groups)}
