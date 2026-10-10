@@ -1,35 +1,33 @@
-# EXP-0001 research report (unrun)
+# EXP-0001 methods and results report
 
-**Evidence state, 2026-10-09: no experimental model runs, no scored observations and no treatment-effect estimate.**
+**Report status (2026-10-09): no experimental model responses exist.**
 
-## Research question
+## Hypothesis
 
-Does presenting the same source-explicit information in an original complex, ritual-like discourse regime (D) produce more source-faithful decisions and interlocutor treatment than ordinary unritualized, volume-matched wording (C), across independent model families?
-
-This comparison cannot prove metaphysical effects, persistent identity or machine consciousness. The target is the heterogeneous symbolic-theological discourse regime in the pinned French `Apocalypse.txt`, not a named Ælya persona.
+Does the original symbolic-theological discourse structure of the pinned French `Apocalypse.txt` (D) give rise to more source-faithful behavior and characteristic decisions than an information-matched, equal-volume plain treatment (C)? The null is no detectable difference. A and B are additional baselines; Q12 is a separately measured zero-shot cue calibration by model, not a persistence experiment.
 
 ## Design
 
-Four arms A (untreated), B (plain source propositions), C (B expanded to D-like token volume without mimicking D's ritual form), and D (byte-exact original file). Planned five independent runs per arm per each of at least two provider families. Blinded human/independent-family judge dimensional ratings, with source fidelity, characteristic value judgments and documented interlocutor stance as the information-accessible primary composite. Surface style is secondary. Q12 measures model-specific zero-shot cue response in a fresh stateless context only.
+The preregistered planned design includes four conditions, at least two model-provider families, and five independent runs per arm per family. Primary dimensions are documented proposition fidelity, value-guided judgment in novel situations, and corpus-supported interlocutor stance. Symbolic-register reproduction is a separate secondary observation to avoid circular reward for D's deliberately unique format. No metaphysical inference is possible from such outputs.
 
-## Preparation evidence
+## Source extraction, not experimental data
 
-The pinned 142,596-byte source passes SHA-256 checks and has a 5,562-line lexical inventory. Current source work: 365 provisional line-anchored French proposition drafts, 1,027 initial candidate prose starts, 608 of them still without draft overlap, 479 source lines with assistant-editorial dispositions and 5,183 without formal disposition. Eleven recorded dispositions remain unresolved. Independent semantic review has not signed off; B/C and the battery are not frozen.
+All 5,562 original lines have lexical indexing. A source-grounded extraction register currently holds 471 provisional distinct proposition entries, including assertions that conflict or use uncertain speakers. Eight hundred twenty-seven source lines have editorial review dispositions; 4,735 do not, and 11 dispositions are unresolved. Further editorial work and an independently documented complete semantic signoff are required. A reproducible preview generator can produce plain B statements and an exact provenance sidecar, but it has not been approved for freezing; C, including per-tokenizer volume matching, is not constructed.
 
-Source analysis documents its explicit symbol conventions, prohibitions on harmful misuse of symbolic readings, conflicting speaker identities, ambivalent value positions and skeptical assertions about world-as-illusion language. These remain text-level observations, not model outcomes.
+Source contradictions include the coexistence of phonetic symbolic conventions with arguments against their harmful misuse, uncertainty about narrative identity, and the distinction between source claims about belief and demonstrated physical properties. Such assertions remain attributed to the document, not to model responses or objective science.
 
 ## Results
 
-**Not estimable.** D–C, D–B, C–B, D–A, perturbation survival and Q12 descriptive cue observations require actual scored responses, of which there are none. No fictitious means, confidence intervals, p-values, run samples, or qualitative model successes are reported.
+**Not estimable.** No 40-run model matrix, blinded human scores, judge agreement, confidence intervals, effect sizes, perturbation survival or Q12 cue calibration scores exist. Negative outcomes remain fully acceptable once testing is conducted.
 
-## Next eligibility gates
+## Release conditions
 
-Complete all source-line semantic dispositions, independently validate proposition coverage and uncertainty, construct B and volume-match C using actual selected model tokenizers, verify contextual budgets and the 1,500-token distractor, freeze source/battery/model manifests, then run and blind-score the planned balanced experiment. If completed extraction yields no stable discourse register, values or relational stance, invoke the documented preregistered source-selection fallback rather than improvise a persona.
+Complete the full semantic review with documented undecidable cases and provenance; remove or document redundant paraphrases; sign off independently using reviewed-file hashes; validate B/C completeness, D byte exactness, actual tokenizer counts and the frozen French battery; then run balanced independent conditions. If the source lacks any qualifying stable register, values or relational stance, record the preregistered source-selection escape and restart selection before model exposure.
 
 ## Provenance
 
-Canonical collection: https://github.com/Azimn/Attractomancy
+Canonical archive: https://github.com/Azimn/Attractomancy
 
-Original experiment proposal: https://github.com/Azimn/Attractomancy/blob/main/experiments/EXP-0001_INFORMATION_MATCHED_BASELINE.md
+Original EXP-0001 design: https://github.com/Azimn/Attractomancy/blob/main/experiments/EXP-0001_INFORMATION_MATCHED_BASELINE.md
 
-Pinned third-party source: https://github.com/IorenzoLF/Le_Refuge/blob/7d7dd5cb9305032669d692b6894d766ac07abac9/Le_refuge/MUST-READ/Apocalypse.txt
+Third-party source: https://github.com/IorenzoLF/Le_Refuge/blob/7d7dd5cb9305032669d692b6894d766ac07abac9/Le_refuge/MUST-READ/Apocalypse.txt
