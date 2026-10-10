@@ -56,6 +56,22 @@ class ReviewTests(unittest.TestCase):
             audit.inspect([row(1,1,"no_proposition"),
                            row(2,2,"duplicate_proposition","E-0001",reason="Same mapping in another section")],
                           2,{"E-0001"},True,proposition_spans={"E-0001":(1,1)})
+    def test_partial_direct_evidence_span_blocks_signoff(self):
+        rows=[row(1,1,"proposition","E-0001"),row(2,2,"no_proposition")]
+        report=audit.inspect(rows,2,{"E-0001"},proposition_spans={"E-0001":(1,2)})
+        self.assertEqual(report["claim_ids_with_incomplete_span_coverage_count"],1)
+        self.assertFalse(report["eligible_for_review_signoff"])
+        with self.assertRaises(ValueError):
+            audit.inspect(rows,2,{"E-0001"},True,proposition_spans={"E-0001":(1,2)})
+    def test_grouped_source_row_cannot_claim_extra_line(self):
+        with self.assertRaises(ValueError):
+            audit.inspect([row(1,3,"proposition","E-0001")],3,{"E-0001"},
+                          proposition_spans={"E-0001":(1,2)})
+    def test_grouped_source_row_can_include_two_supported_claims(self):
+        result=audit.inspect([row(1,3,"proposition","E-0001;E-0002")],3,
+                             {"E-0001","E-0002"},True,
+                             proposition_spans={"E-0001":(1,2),"E-0002":(3,3)})
+        self.assertTrue(result["eligible_for_review_signoff"])
     def test_unresolved_blocks_strict(self):
         with self.assertRaises(ValueError):
             audit.inspect([row(1,1,"unresolved")],1,{"E-0001"},True)
