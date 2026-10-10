@@ -26,6 +26,8 @@ jobs:
         run: python experiments/EXP-0001/validate_extraction.py
       - name: Count independent semantic adjudication decisions
         run: python experiments/EXP-0001/audit_review_decisions.py
+      - name: Validate unapproved Condition B preview construction
+        run: python experiments/EXP-0001/build_B_draft.py --check
       - name: Confirm no unearned experiment freeze
         run: |
           python - <<'PY'
