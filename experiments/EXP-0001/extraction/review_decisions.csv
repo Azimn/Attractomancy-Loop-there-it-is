@@ -357,3 +357,40 @@ start_line,end_line,decision,proposition_ids,voice,reason,reviewer,review_date
 2385,2385,proposition,E-0165,unattributed,Original geometry or source comment checked; literal mapping only and human review pending,assistant-editorial,2026-10-10
 2386,2386,proposition,E-0166,unattributed,Original geometry or source comment checked; literal mapping only and human review pending,assistant-editorial,2026-10-10
 2394,2395,proposition,E-0167,unattributed,Original geometry or source comment checked; literal mapping only and human review pending,assistant-editorial,2026-10-10
+2471,2471,proposition,E-0043,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
+1462,1462,proposition,E-0139,unattributed,Letter-rule annotation verified in pinned source; source-internal mapping only,assistant-editorial,2026-10-10
+1464,1465,proposition,E-0140,unattributed,Letter-rule annotation verified in pinned source; source-internal mapping only,assistant-editorial,2026-10-10
+1483,1484,proposition,E-0141,unattributed,Explicit parable source lines verified; story events not treated as biography,assistant-editorial,2026-10-10
+1486,1486,proposition,E-0142,unattributed,Explicit parable source lines verified; story events not treated as biography,assistant-editorial,2026-10-10
+1489,1490,proposition,E-0143,unattributed,Explicit parable source lines verified; story events not treated as biography,assistant-editorial,2026-10-10
+1491,1492,proposition,E-0144,unattributed,Explicit parable source lines verified; story events not treated as biography,assistant-editorial,2026-10-10
+1495,1497,proposition,E-0145,unattributed,Explicit parable source lines verified; story events not treated as biography,assistant-editorial,2026-10-10
+1498,1500,proposition,E-0146,unattributed,Explicit parable source lines verified; story events not treated as biography,assistant-editorial,2026-10-10
+1502,1503,proposition,E-0147,unattributed,Explicit parable source lines verified; story events not treated as biography,assistant-editorial,2026-10-10
+1504,1505,proposition,E-0148,unattributed,Explicit parable source lines verified; story events not treated as biography,assistant-editorial,2026-10-10
+1506,1507,proposition,E-0149,unattributed,Explicit parable source lines verified; story events not treated as biography,assistant-editorial,2026-10-10
+1508,1511,proposition,E-0150,unattributed,Explicit parable source lines verified; story events not treated as biography,assistant-editorial,2026-10-10
+1512,1513,proposition,E-0151,unattributed,Explicit parable source lines verified; story events not treated as biography,assistant-editorial,2026-10-10
+1514,1514,proposition,E-0152,unattributed,Explicit parable source lines verified; story events not treated as biography,assistant-editorial,2026-10-10
+1515,1517,proposition,E-0153,unattributed,Explicit parable source lines verified; story events not treated as biography,assistant-editorial,2026-10-10
+1518,1519,proposition,E-0154,unattributed,Explicit parable source lines verified; story events not treated as biography,assistant-editorial,2026-10-10
+2405,2406,proposition,E-0168,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
+2411,2412,proposition,E-0169,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
+2414,2414,proposition,E-0170,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
+2434,2434,proposition,E-0171,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
+2437,2437,proposition,E-0172,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
+2449,2450,proposition,E-0173,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
+2453,2453,proposition,E-0174,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
+2455,2455,proposition,E-0175,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
+2457,2457,proposition,E-0176,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
+2458,2459,proposition,E-0177,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
+2461,2461,proposition,E-0178,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
+2465,2465,proposition,E-0179,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
+2467,2468,proposition,E-0180,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
+2476,2476,proposition,E-0181,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
+2478,2478,proposition,E-0182,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
+2484,2485,proposition,E-0183,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
+2488,2491,proposition,E-0184,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
+2494,2495,proposition,E-0185,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
+2496,2496,proposition,E-0186,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
+2500,2500,proposition,E-0187,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
