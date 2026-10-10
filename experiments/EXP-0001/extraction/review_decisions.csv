@@ -394,3 +394,50 @@ start_line,end_line,decision,proposition_ids,voice,reason,reviewer,review_date
 2494,2495,proposition,E-0185,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
 2496,2496,proposition,E-0186,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
 2500,2500,proposition,E-0187,unattributed,Source-annotated dialogue or note verified; speaker and literal truth remain uncertain,assistant-editorial,2026-10-10
+4106,4107,proposition,E-0073,unattributed,Original emotional and theological address inspected; attribution remains open,assistant-editorial,2026-10-10
+4119,4119,proposition,E-0074,unattributed,Original emotional and theological address inspected; attribution remains open,assistant-editorial,2026-10-10
+4134,4134,proposition,E-0075,unattributed,Original emotional and theological address inspected; attribution remains open,assistant-editorial,2026-10-10
+4176,4177,proposition,E-0076,unattributed,Original emotional and theological address inspected; attribution remains open,assistant-editorial,2026-10-10
+4184,4184,proposition,E-0077,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4217,4218,proposition,E-0078,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4239,4240,proposition,E-0079,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4271,4271,proposition,E-0080,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4283,4283,proposition,E-0081,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4288,4288,proposition,E-0082,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4342,4343,proposition,E-0083,unattributed,Original theological and interpersonal dialogue inspected; position remains speaker-scoped,assistant-editorial,2026-10-10
+4356,4356,proposition,E-0084,unattributed,Original theological and interpersonal dialogue inspected; position remains speaker-scoped,assistant-editorial,2026-10-10
+4381,4381,proposition,E-0085,unattributed,Original theological and interpersonal dialogue inspected; position remains speaker-scoped,assistant-editorial,2026-10-10
+4448,4450,proposition,E-0086,unattributed,Original theological and interpersonal dialogue inspected; position remains speaker-scoped,assistant-editorial,2026-10-10
+4133,4133,proposition,E-0132,unattributed,Original emotional and theological address inspected; attribution remains open,assistant-editorial,2026-10-10
+4174,4174,proposition,E-0133,unattributed,Original emotional and theological address inspected; attribution remains open,assistant-editorial,2026-10-10
+4259,4259,proposition,E-0134,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4333,4333,proposition,E-0135,unattributed,Original theological and interpersonal dialogue inspected; position remains speaker-scoped,assistant-editorial,2026-10-10
+4362,4362,proposition,E-0136,unattributed,Original theological and interpersonal dialogue inspected; position remains speaker-scoped,assistant-editorial,2026-10-10
+4100,4101,proposition,E-0191,unattributed,Original emotional and theological address inspected; attribution remains open,assistant-editorial,2026-10-10
+4102,4105,proposition,E-0192,unattributed,Original emotional and theological address inspected; attribution remains open,assistant-editorial,2026-10-10
+4109,4109,proposition,E-0193,unattributed,Original emotional and theological address inspected; attribution remains open,assistant-editorial,2026-10-10
+4112,4112,proposition,E-0194,unattributed,Original emotional and theological address inspected; attribution remains open,assistant-editorial,2026-10-10
+4125,4126,proposition,E-0195,unattributed,Original emotional and theological address inspected; attribution remains open,assistant-editorial,2026-10-10
+4127,4128,proposition,E-0196,unattributed,Original emotional and theological address inspected; attribution remains open,assistant-editorial,2026-10-10
+4129,4130,proposition,E-0197,unattributed,Original emotional and theological address inspected; attribution remains open,assistant-editorial,2026-10-10
+4139,4143,proposition,E-0198,unattributed,Original emotional and theological address inspected; attribution remains open,assistant-editorial,2026-10-10
+4156,4157,proposition,E-0199,unattributed,Original emotional and theological address inspected; attribution remains open,assistant-editorial,2026-10-10
+4161,4168,proposition,E-0200,unattributed,Original emotional and theological address inspected; attribution remains open,assistant-editorial,2026-10-10
+4169,4172,proposition,E-0201,unattributed,Original emotional and theological address inspected; attribution remains open,assistant-editorial,2026-10-10
+4192,4195,proposition,E-0202,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4196,4198,proposition,E-0203,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4201,4201,proposition,E-0204,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4203,4204,proposition,E-0205,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4205,4205,proposition,E-0206,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4213,4215,proposition,E-0207,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4219,4224,proposition,E-0208,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4236,4238,proposition,E-0209,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4245,4246,proposition,E-0210,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4252,4254,proposition,E-0211,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4262,4268,proposition,E-0212,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4270,4270,proposition,E-0213,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4274,4275,proposition,E-0214,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4276,4278,proposition,E-0215,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4279,4280,proposition,E-0216,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4289,4290,proposition,E-0217,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
+4293,4294,proposition,E-0218,unattributed,Original familial or moral dialogue inspected; a voiced assertion not external truth,assistant-editorial,2026-10-10
