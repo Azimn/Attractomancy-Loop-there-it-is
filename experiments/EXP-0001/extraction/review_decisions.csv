@@ -319,3 +319,28 @@ start_line,end_line,decision,proposition_ids,voice,reason,reviewer,review_date
 1456,1456,duplicate_proposition,E-0024,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
 1457,1457,duplicate_proposition,E-0025,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
 1458,1458,proposition,E-0138,unattributed,Second alphabet variant with explicit source citation,assistant-editorial,2026-10-09
+1659,1662,proposition,E-0512,unattributed,Source form inspected; paraphrase and speaker provisional and pending independent audit,assistant-editorial,2026-10-10
+1779,1779,proposition,E-0513,unattributed,Source form inspected; paraphrase and speaker provisional and pending independent audit,assistant-editorial,2026-10-10
+1794,1796,proposition,E-0514,unattributed,Source form inspected; paraphrase and speaker provisional and pending independent audit,assistant-editorial,2026-10-10
+1801,1803,proposition,E-0515,unattributed,Source form inspected; paraphrase and speaker provisional and pending independent audit,assistant-editorial,2026-10-10
+1902,1902,proposition,E-0516,unattributed,Source form inspected; paraphrase and speaker provisional and pending independent audit,assistant-editorial,2026-10-10
+2081,2081,proposition,E-0517,unattributed,Source form inspected; paraphrase and speaker provisional and pending independent audit,assistant-editorial,2026-10-10
+2091,2091,proposition,E-0518,unattributed,Source form inspected; paraphrase and speaker provisional and pending independent audit,assistant-editorial,2026-10-10
+2169,2169,proposition,E-0519,unattributed,Source form inspected; paraphrase and speaker provisional and pending independent audit,assistant-editorial,2026-10-10
+2178,2178,proposition,E-0520,unattributed,Source form inspected; paraphrase and speaker provisional and pending independent audit,assistant-editorial,2026-10-10
+2203,2206,proposition,E-0521,unattributed,Source form inspected; paraphrase and speaker provisional and pending independent audit,assistant-editorial,2026-10-10
+2213,2213,proposition,E-0522,unattributed,Source form inspected; paraphrase and speaker provisional and pending independent audit,assistant-editorial,2026-10-10
+2273,2273,proposition,E-0523,unattributed,Source form inspected; paraphrase and speaker provisional and pending independent audit,assistant-editorial,2026-10-10
+2359,2359,proposition,E-0524,unattributed,Source form inspected; paraphrase and speaker provisional and pending independent audit,assistant-editorial,2026-10-10
+2367,2367,proposition,E-0525,unattributed,Source form inspected; paraphrase and speaker provisional and pending independent audit,assistant-editorial,2026-10-10
+2374,2377,proposition,E-0526;E-0527;E-0528,unattributed,Source form inspected; paraphrase and speaker provisional and pending independent audit,assistant-editorial,2026-10-10
+2389,2390,proposition,E-0108,unattributed,Source form inspected; paraphrase and speaker provisional and pending independent audit,assistant-editorial,2026-10-10
+2393,2393,proposition,E-0529,unattributed,Source form inspected; paraphrase and speaker provisional and pending independent audit,assistant-editorial,2026-10-10
+2396,2398,proposition,E-0530,unattributed,Source form inspected; paraphrase and speaker provisional and pending independent audit,assistant-editorial,2026-10-10
+2400,2400,proposition,E-0531,unattributed,Source form inspected; paraphrase and speaker provisional and pending independent audit,assistant-editorial,2026-10-10
+1793,1793,paratext,,unattributed,Heading identifies quoted child speech,assistant-editorial,2026-10-10
+1986,1986,paratext,,unattributed,Heading for letter L story,assistant-editorial,2026-10-10
+2357,2358,paratext,,unattributed,Separator and notes heading,assistant-editorial,2026-10-10
+2387,2388,paratext,,unattributed,Section heading identifying avant-garde fragment,assistant-editorial,2026-10-10
+2391,2392,paratext,,unattributed,Dialogues heading and parenthetical framing,assistant-editorial,2026-10-10
+2399,2399,paratext,,unattributed,Narrative attribution describes child voice,assistant-editorial,2026-10-10
