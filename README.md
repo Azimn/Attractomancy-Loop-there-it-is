@@ -11,9 +11,9 @@ The French `Apocalypse.txt` from [Le Refuge](https://github.com/IorenzoLF/Le_Ref
 ## Current extraction, 2026-10-09
 
 - 5,562 / 5,562 original source lines lexically inventoried.
-- 323 source-line-cited **draft propositions**, not independently approved.
+- 365 source-line-cited **draft propositions**, not independently approved.
 - 1,027 initial lexical prose candidates; 651 candidate starts do not overlap any drafted proposition and still require semantic review. The difference is not a count of missing distinct propositions.
-- 379 source lines have assistant-editorial adjudication entries, 11 of them explicitly `unresolved`. Remaining 5,183 source lines have no recorded editorial disposition; independent reviewer signoff has not occurred.
+- 479 source lines have assistant-editorial adjudication entries, 11 of them explicitly `unresolved`. Remaining 5,183 source lines have no recorded editorial disposition; independent reviewer signoff has not occurred.
 - Contradictions, uncertainty about speaker identity, and the source's limitations on symbolic interpretation remain visible.
 
 See [status](experiments/EXP-0001/STATUS.md), [review guide](experiments/EXP-0001/extraction/REVIEW_GUIDE.md), and [register tensions](experiments/EXP-0001/extraction/REGISTER_TENSIONS.md).
