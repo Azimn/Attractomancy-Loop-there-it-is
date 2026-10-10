@@ -43,6 +43,19 @@ class ReviewTests(unittest.TestCase):
     def test_nonclaim_with_claim_id_blocked(self):
         with self.assertRaises(ValueError):
             audit.inspect([row(1,1,"paratext","E-0001")],1,{"E-0001"})
+    def test_full_line_review_without_claim_coverage_is_not_approval(self):
+        result=audit.inspect([row(1,1,"paratext"),row(2,2,"no_proposition")],
+                             2,{"E-0001"},proposition_spans={"E-0001":(1,1)})
+        self.assertEqual(result["claim_ids_without_direct_decision_count"],1)
+        self.assertFalse(result["eligible_for_review_signoff"])
+        with self.assertRaises(ValueError):
+            audit.inspect([row(1,1,"paratext"),row(2,2,"no_proposition")],
+                          2,{"E-0001"},True,proposition_spans={"E-0001":(1,1)})
+    def test_repeated_mapping_does_not_substitute_for_direct_provenance(self):
+        with self.assertRaises(ValueError):
+            audit.inspect([row(1,1,"no_proposition"),
+                           row(2,2,"duplicate_proposition","E-0001",reason="Same mapping in another section")],
+                          2,{"E-0001"},True,proposition_spans={"E-0001":(1,1)})
     def test_unresolved_blocks_strict(self):
         with self.assertRaises(ValueError):
             audit.inspect([row(1,1,"unresolved")],1,{"E-0001"},True)
