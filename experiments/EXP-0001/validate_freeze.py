@@ -27,8 +27,9 @@ def validate():
     with (HERE / "extraction/review_decisions.csv").open(encoding="utf-8", newline="") as handle:
         decisions = list(csv.DictReader(handle))
     prop_drafts = json.loads((HERE / "extraction/propositions_draft.json").read_text(encoding="utf-8"))["propositions"]
+    spans={p["id"]:(p["d_line_start"],p["d_line_end"]) for p in prop_drafts}
     review = inspect_review_decisions(decisions, extraction["source_lines"],
-                                      {p["id"] for p in prop_drafts}, strict=True)
+                                      set(spans), strict=True, proposition_spans=spans)
     if not review["eligible_for_review_signoff"]:
         raise ValueError("Exhaustive semantic review not completed.")
     manifest = json.loads((HERE / "source_manifest.json").read_text(encoding="utf-8"))
