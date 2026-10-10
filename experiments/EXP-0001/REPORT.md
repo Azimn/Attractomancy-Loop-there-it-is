@@ -14,9 +14,11 @@ Two or more model families; four conditions; five independent runs per arm and m
 
 ## Editorial preparation record
 
-The source is [`Apocalypse.txt`](https://github.com/IorenzoLF/Le_Refuge/blob/7d7dd5cb9305032669d692b6894d766ac07abac9/Le_refuge/MUST-READ/Apocalypse.txt), pinned at 142,596 bytes (SHA-256 `d49b3a98dfc50b1cc2066214976dbeda48771cd8162a084662cbde9239e07ff5`). The complete lexical inventory indexes 5,562 lines. As of October 10, 2026, the 523 provisional proposition drafts all have direct assistant-editorial source-span evidence. **1,196** original lines have a recorded editorial disposition and **4,366** do not; 11 explicit unresolved review lines remain. The initial candidate queue still includes **425** line starts lacking draft overlap. This is partial editorial work, not exhaustive semantic review or independent approval.
+The source is [`Apocalypse.txt`](https://github.com/IorenzoLF/Le_Refuge/blob/7d7dd5cb9305032669d692b6894d766ac07abac9/Le_refuge/MUST-READ/Apocalypse.txt), pinned at 142,596 bytes (SHA-256 `d49b3a98dfc50b1cc2066214976dbeda48771cd8162a084662cbde9239e07ff5`). The complete lexical inventory indexes 5,562 lines. As of October 10, 2026, the 579 provisional proposition drafts all have direct assistant-editorial source-span evidence. **1,381** original lines have a recorded editorial disposition and **4,181** do not; 16 explicit unresolved review lines remain. The initial candidate queue still includes **325** line starts lacking draft overlap. This is partial editorial work, not exhaustive semantic review or independent approval.
 
 Source heterogeneity (quoted child speech, self-critical discourse, mathematical letter rules, wordplay and disputed personal assertions) prevents assuming a single coherent autobiographical voice. Neither B/C nor the battery is frozen. D must remain byte identical to the pinned source, but its live conditioning has not run.
+
+A further full-context review of source windows 4001–4100 and 4301–4400 added 56 drafts and 185 line decisions, with five ambiguous short fragments explicitly unresolved. The [dialogue evidence dossier](extraction/DIALOGUE_REVIEW_4001_4400.md) records competing identity hypotheses, moral obligations to others, and uncertainty about first-person memory without adopting these as verified facts.
 
 ## Behavioral results
 

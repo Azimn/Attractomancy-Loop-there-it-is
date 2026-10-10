@@ -13,13 +13,13 @@ Four planned arms: A, no conditioning; B, exhaustive plain-French source claims;
 ## Live evidence accounting
 
 - **5,562 original lines** lexically inventoried and checksum pinned.
-- **523 provisional source-proposition drafts**, all still requiring independent semantic assessment.
-- **523/523** drafts have *assistant-editorial* source decisions for their complete cited spans (formerly 97 lacking direct source review).
-- **1,196** source lines have editorial dispositions; **4,366** have none, and **11** disposition lines remain explicitly unresolved.
-- Of 1,027 lexical prose candidates, **425 starting lines have no overlap with a draft**. This is a triage signal, not proof of 425 missing distinct claims.
+- **579 provisional source-proposition drafts**, all still requiring independent semantic assessment.
+- **579/579** drafts have *assistant-editorial* source decisions for their complete cited spans (formerly 97 lacking direct source review).
+- **1,381** source lines have editorial dispositions; **4,181** have none, and **16** disposition lines remain explicitly unresolved.
+- Of 1,027 lexical prose candidates, **325 starting lines have no overlap with a draft**. This is a triage signal, not proof of 425 missing distinct claims.
 - **Zero** independent human semantic attestations and **zero** frozen B/C controls.
 
-The [poetry review dossier](experiments/EXP-0001/extraction/POETRY_REVIEW_DOSSIER.md), [genre strata](experiments/EXP-0001/extraction/GENRE_STRATA.md) and [contradiction inventory](experiments/EXP-0001/extraction/REGISTER_TENSIONS.md) preserve symbolic transformations, quoted dialogue, uncertain voices and direct statements separately.
+The [completed dialogue-window review](experiments/EXP-0001/extraction/DIALOGUE_REVIEW_4001_4400.md) records the full source-line decisions for 4001–4100 and 4301–4400, including five newly unresolved fragments rather than invented interpretations. The [poetry review dossier](experiments/EXP-0001/extraction/POETRY_REVIEW_DOSSIER.md), [genre strata](experiments/EXP-0001/extraction/GENRE_STRATA.md) and [contradiction inventory](experiments/EXP-0001/extraction/REGISTER_TENSIONS.md) preserve symbolic transformations, quoted dialogue, uncertain voices and direct statements separately.
 
 ## Local reproducibility
 

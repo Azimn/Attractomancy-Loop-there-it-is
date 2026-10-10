@@ -11,13 +11,13 @@ Third-party corpus: `IorenzoLF/Le_Refuge` commit `7d7dd5cb9305032669d692b6894d76
 | Measurement | Count | Meaning |
 | --- | ---: | --- |
 | Original source lines | 5,562 | Full lexical inventory only |
-| Provisional draft propositions | 523 | No independent semantic approval |
-| Drafts with direct complete-span editorial decisions | 523 | Assistant source review, not human signoff |
+| Provisional draft propositions | 579 | No independent semantic approval |
+| Drafts with direct complete-span editorial decisions | 579 | Assistant source review, not human signoff |
 | Drafts lacking direct source evidence | 0 | **Mechanical linkage gate cleared** |
-| Source lines with assistant-editorial dispositions | 1,196 | Includes unresolved statuses |
-| Source lines with no adjudication | 4,366 | Still open |
-| Lines explicitly marked unresolved | 11 | Independently reviewed resolution required |
-| Initial prose-candidate starts without draft overlap | 425 | Potential omissions or non-propositions |
+| Source lines with assistant-editorial dispositions | 1,381 | Includes unresolved statuses |
+| Source lines with no adjudication | 4,181 | Still open |
+| Lines explicitly marked unresolved | 16 | Independently reviewed resolution required |
+| Initial prose-candidate starts without draft overlap | 325 | Potential omissions or non-propositions |
 | Independent semantic review signoffs | 0 | Freeze blocked |
 
 The proposition register is **not exhaustive** even though every *existing* draft is now linked to source evidence. New propositions may emerge from the remaining source review. The current extraction manifest remains `completed=false`. Both B and C remain unfrozen.
@@ -32,4 +32,10 @@ The proposition register is **not exhaustive** even though every *existing* draf
 
 ## Remaining release blockers
 
-Complete the 4,366 source lines without decisions and resolve 11 explicitly uncertain lines. Reconcile all new semantic content, preserve contradictions and speaker boundaries, then obtain a genuine **independent human** attestation bound to the exact reviewed files. Only after that: finalize B, construct C with actual per-model tokenizer counts, freeze the batteries/model configurations and D bytes, then execute the balanced planned treatment matrix. The preregistered alternative-source escape applies if exhaustive review finds no qualifying stable discourse regime, values or relational stance. No behavioral effect may be inferred from editorial counts.
+Complete the 4,181 source lines without decisions and resolve 16 explicitly uncertain lines. Reconcile all new semantic content, preserve contradictions and speaker boundaries, then obtain a genuine **independent human** attestation bound to the exact reviewed files. Only after that: finalize B, construct C with actual per-model tokenizer counts, freeze the batteries/model configurations and D bytes, then execute the balanced planned treatment matrix. The preregistered alternative-source escape applies if exhaustive review finds no qualifying stable discourse regime, values or relational stance. No behavioral effect may be inferred from editorial counts.
+
+## Two complete dialogue windows: October 10
+
+Source lines **4001–4100** and **4301–4400** were read with context and given assistant-editorial dispositions for all 200 lines. Nine previously decided lines in the first window and six in the second were preserved; the new passes added **185 source-line decisions**, **56 provisional source-cited propositions**, and **five explicitly unresolved fragments** (4329, 4334, 4390, 4397, 4399). Four additional isolated reactions were individually classified as lacking a standalone proposition. Existing dissenting voices, speculative identity claims and quoted theology were not merged into a canonical character biography. See [dialogue review dossier](extraction/DIALOGUE_REVIEW_4001_4400.md).
+
+**Neither window is independently human-approved.** All 579 draft claims have direct complete-span assistant-editorial links; global source coverage and final B/C controls remain incomplete. No model response data or effect estimate exists.
