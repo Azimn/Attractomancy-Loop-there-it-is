@@ -28,6 +28,12 @@ jobs:
         run: python experiments/EXP-0001/audit_review_decisions.py
       - name: Validate unapproved Condition B preview construction
         run: python experiments/EXP-0001/build_B_draft.py --check
+      - name: Cross-check live proposition and review metrics
+        run: python experiments/EXP-0001/current_metrics.py
+      - name: Flag overlapping draft citations without merging them
+        run: python experiments/EXP-0001/check_claim_overlap.py
+      - name: Smoke test private review packet with upstream pinned source
+        run: python experiments/EXP-0001/make_review_packet.py --start 3001 --end 3010 --output /tmp/exp0001_private_review_sample.jsonl
       - name: Confirm no unearned experiment freeze
         run: |
           python - <<'PY'
