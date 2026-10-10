@@ -132,3 +132,40 @@ start_line,end_line,decision,proposition_ids,voice,reason,reviewer,review_date
 4902,4902,unresolved,,unattributed,Interlocutor or symbolic role requires contextual adjudication; no unsupported nonextractability decision,assistant-editorial,2026-10-09
 4945,4945,unresolved,,unattributed,Interlocutor or symbolic role requires contextual adjudication; no unsupported nonextractability decision,assistant-editorial,2026-10-09
 4946,4946,unresolved,,unattributed,Interlocutor or symbolic role requires contextual adjudication; no unsupported nonextractability decision,assistant-editorial,2026-10-09
+5003,5004,proposition,E-0324,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5006,5009,proposition,E-0325;E-0326,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5015,5017,proposition,E-0327,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5019,5024,proposition,E-0328,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5045,5046,proposition,E-0329;E-0102,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5051,5052,proposition,E-0330,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5059,5063,proposition,E-0331;E-0332,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5100,5101,proposition,E-0333;E-0334,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5114,5116,proposition,E-0335,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5119,5120,proposition,E-0336,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5134,5136,proposition,E-0337;E-0338,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5138,5138,proposition,E-0103,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5150,5151,proposition,E-0339,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5153,5155,proposition,E-0340,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5162,5164,proposition,E-0341,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5168,5168,proposition,E-0342,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5172,5174,proposition,E-0343,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5200,5200,proposition,E-0344,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5203,5203,proposition,E-0345,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5207,5209,proposition,E-0104;E-0346,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5211,5212,proposition,E-0347,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5222,5226,proposition,E-0348;E-0349,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5228,5229,proposition,E-0350,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5260,5261,proposition,E-0351,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5265,5267,proposition,E-0352;E-0105,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5269,5269,proposition,E-0353,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5292,5296,proposition,E-0354,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5305,5315,proposition,E-0355;E-0356;E-0106,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5317,5319,proposition,E-0357,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5324,5325,proposition,E-0358;E-0359,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5376,5376,proposition,E-0107,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5445,5448,proposition,E-0360,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5481,5481,proposition,E-0361,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5484,5484,proposition,E-0362,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5492,5492,proposition,E-0363,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5524,5525,proposition,E-0364,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
+5546,5547,proposition,E-0365,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
