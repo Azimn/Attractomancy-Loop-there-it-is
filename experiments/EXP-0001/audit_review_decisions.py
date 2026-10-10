@@ -19,9 +19,8 @@ STATUSES={
 }
 COLUMNS=("start_line","end_line","decision","proposition_ids","voice","reason","reviewer","review_date")
 
-def inspect(rows, line_count, valid_ids, strict=False):
+def inspect(rows, line_count, valid_ids, strict=False, proposition_spans=None):
     covered={}
-    reasons_missing=[]
     for idx,r in enumerate(rows,1):
         start,end=int(r["start_line"]),int(r["end_line"])
         if not 1<=start<=end<=line_count:
@@ -33,6 +32,17 @@ def inspect(rows, line_count, valid_ids, strict=False):
             raise ValueError("Unknown proposition ID row "+str(idx))
         if r["decision"] in ("proposition","continuation","duplicate_proposition") and not ids:
             raise ValueError("Missing linked proposition row "+str(idx))
+        if r["decision"] not in ("proposition","continuation","duplicate_proposition") and ids:
+            raise ValueError("Nonclaim row cannot contain proposition IDs: "+str(idx))
+        if proposition_spans is not None:
+            for claim_id in ids:
+                a,b=proposition_spans[claim_id]
+                if r["decision"] in ("proposition","continuation") and (end<a or start>b):
+                    raise ValueError("Source citation mismatch row "+str(idx))
+                if r["decision"]=="duplicate_proposition" and not (end<a or start>b):
+                    raise ValueError("Duplicate must reference another source occurrence row "+str(idx))
+        if r["decision"]=="duplicate_proposition" and len(r["reason"].strip())<12:
+            raise ValueError("Missing semantic equivalence rationale row "+str(idx))
         if r["decision"]=="nonextractable_symbolic" and not r["reason"].strip():
             raise ValueError("Nonextractable decision missing justification "+str(idx))
         if not r["reviewer"] or not r["review_date"]:
@@ -63,7 +73,8 @@ def main():
         if any(name not in reader.fieldnames for name in COLUMNS):
             raise ValueError("Review decision schema missing columns")
         rows=list(reader)
-    result=inspect(rows,source["source_lines"],{x["id"] for x in docs["propositions"]},args.strict)
+    spans={x["id"]:(x["d_line_start"],x["d_line_end"]) for x in docs["propositions"]}
+    result=inspect(rows,source["source_lines"],set(spans),args.strict,proposition_spans=spans)
     print(json.dumps(result,indent=2))
 if __name__=="__main__":
     try:main()
