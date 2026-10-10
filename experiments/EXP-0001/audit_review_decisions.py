@@ -22,6 +22,7 @@ COLUMNS=("start_line","end_line","decision","proposition_ids","voice","reason","
 def inspect(rows, line_count, valid_ids, strict=False, proposition_spans=None):
     covered={}
     directly_reviewed_claim_ids=set()
+    directly_reviewed_claim_lines=collections.defaultdict(set)
     for idx,r in enumerate(rows,1):
         start,end=int(r["start_line"]),int(r["end_line"])
         if not 1<=start<=end<=line_count:
@@ -42,12 +43,21 @@ def inspect(rows, line_count, valid_ids, strict=False, proposition_spans=None):
                     raise ValueError("Source citation mismatch row "+str(idx))
                 if r["decision"]=="duplicate_proposition" and not (end<a or start>b):
                     raise ValueError("Duplicate must reference another source occurrence row "+str(idx))
+        if proposition_spans is not None and r["decision"] in ("proposition","continuation"):
+            # A grouped row can cite several claims but cannot include unrelated lines.
+            for line in range(start,end+1):
+                if not any(proposition_spans[cid][0]<=line<=proposition_spans[cid][1] for cid in ids):
+                    raise ValueError("Claim row includes uncited source line "+str(line))
         if r["decision"]=="duplicate_proposition" and len(r["reason"].strip())<12:
             raise ValueError("Missing semantic equivalence rationale row "+str(idx))
         if r["decision"]=="nonextractable_symbolic" and not r["reason"].strip():
             raise ValueError("Nonextractable decision missing justification "+str(idx))
         if r["decision"] in ("proposition","continuation"):
             directly_reviewed_claim_ids.update(ids)
+            if proposition_spans is not None:
+                for cid in ids:
+                    a,b=proposition_spans[cid]
+                    directly_reviewed_claim_lines[cid].update(range(max(a,start),min(b,end)+1))
         if not r["reviewer"] or not r["review_date"]:
             raise ValueError("Unattributed decision "+str(idx))
         for line in range(start,end+1):
@@ -57,13 +67,20 @@ def inspect(rows, line_count, valid_ids, strict=False, proposition_spans=None):
     pending=[n for n in range(1,line_count+1) if n not in covered]
     unresolved=[n for n,state in covered.items() if state=="unresolved"]
     claims_without_direct_review=sorted(valid_ids-directly_reviewed_claim_ids)
+    claims_with_partial_span_review=[]
+    if proposition_spans is not None:
+        for cid,(a,b) in proposition_spans.items():
+            if cid in directly_reviewed_claim_ids and any(
+                    line not in directly_reviewed_claim_lines[cid] for line in range(a,b+1)):
+                claims_with_partial_span_review.append(cid)
     report={"adjudicated_source_lines":len(covered),"source_lines":line_count,
         "unadjudicated_source_lines":len(pending),"unresolved_adjudications":len(unresolved),
         "direct_claims_with_editorial_decisions":len(directly_reviewed_claim_ids),
         "claim_ids_without_direct_decision_count":len(claims_without_direct_review),
+        "claim_ids_with_incomplete_span_coverage_count":len(claims_with_partial_span_review),
         "statuses":dict(collections.Counter(covered.values())),
-        "eligible_for_review_signoff":not pending and not unresolved and not claims_without_direct_review}
-    if strict and (pending or unresolved or claims_without_direct_review):
+        "eligible_for_review_signoff":not pending and not unresolved and not claims_without_direct_review and not claims_with_partial_span_review}
+    if strict and (pending or unresolved or claims_without_direct_review or claims_with_partial_span_review):
         raise ValueError("Semantic adjudication incomplete: "+str(report))
     return report
 
