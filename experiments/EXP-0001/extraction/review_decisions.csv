@@ -170,16 +170,16 @@ start_line,end_line,decision,proposition_ids,voice,reason,reviewer,review_date
 5524,5525,proposition,E-0364,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
 5546,5547,proposition,E-0365,unattributed,Editorial claim-level source span inspected; distinct speaker remains unverified,assistant-editorial,2026-10-09
 3007,3010,proposition,E-0366,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
-3018,3020,proposition,E-0109;E-0367,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
+3018,3020,proposition,E-0109,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
 3022,3022,proposition,E-0368,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
 3024,3024,proposition,E-0369,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
 3037,3038,proposition,E-0370,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
 3043,3045,proposition,E-0371,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
 3049,3051,proposition,E-0372;E-0044,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
-3073,3075,proposition,E-0373;E-0045,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
-3101,3114,proposition,E-0374;E-0375;E-0376;E-0046,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
+3073,3075,proposition,E-0045,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
+3101,3114,proposition,E-0374;E-0375;E-0046,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
 3116,3119,proposition,E-0377,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
-3139,3145,proposition,E-0378;E-0379;E-0047;E-0048;E-0049,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
+3139,3145,proposition,E-0378;E-0047;E-0048;E-0049,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
 3148,3149,proposition,E-0380,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
 3160,3169,proposition,E-0381;E-0050;E-0382;E-0051,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
 3176,3181,proposition,E-0383,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
@@ -205,7 +205,7 @@ start_line,end_line,decision,proposition_ids,voice,reason,reviewer,review_date
 3417,3423,proposition,E-0413,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
 3425,3427,proposition,E-0414,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
 3429,3441,proposition,E-0415;E-0416,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
-3448,3456,proposition,E-0417;E-0111;E-0418;E-0112,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
+3448,3456,proposition,E-0417;E-0111;E-0112,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
 3458,3468,proposition,E-0419;E-0420,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
 3471,3476,proposition,E-0421;E-0113,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
 3478,3485,proposition,E-0422,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
@@ -232,8 +232,8 @@ start_line,end_line,decision,proposition_ids,voice,reason,reviewer,review_date
 3653,3653,proposition,E-0445,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
 3659,3659,proposition,E-0446,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
 3662,3662,proposition,E-0447,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
-3666,3667,proposition,E-0448;E-0117,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
-3675,3677,proposition,E-0449;E-0064,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
+3666,3667,proposition,E-0117,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
+3675,3677,proposition,E-0064,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
 3707,3707,proposition,E-0450,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
 3714,3715,proposition,E-0451,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09
 3722,3724,proposition,E-0452;E-0453,unattributed,Context checked against pinned dialogue; exact voice and conceptual equivalence not independently approved,assistant-editorial,2026-10-09

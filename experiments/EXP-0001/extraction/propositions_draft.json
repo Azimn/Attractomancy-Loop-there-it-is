@@ -532,37 +532,37 @@
     {
       "id": "E-0045",
       "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
-      "d_line_start": 3074,
+      "d_line_start": 3073,
       "d_line_end": 3075,
-      "sentence_fr": "Une voix distingue une histoire racontée d'une construction conceptuelle.",
+      "sentence_fr": "Une voix dénonce le caractère possiblement construit du récit qu'elle peut inventer.",
       "category": "discourse_norm",
       "attribution": "unattributed",
       "contradiction_group": null,
-      "notes": "Line wrapping inspected; semantic scope still requires independent review.",
+      "notes": "Line wrapping inspected; semantic scope still requires independent review. Duplicate later draft merged into this canonical claim; preserve original ID and fuller exact source span.",
       "review_status": "editorial_draft_requires_independent_audit"
     },
     {
       "id": "E-0046",
       "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
-      "d_line_start": 3112,
-      "d_line_end": 3112,
-      "sentence_fr": "Une voix affirme que son épouse et son fils ont été entraînés dans une situation pénible.",
+      "d_line_start": 3111,
+      "d_line_end": 3114,
+      "sentence_fr": "Une voix soutient que sa femme et son fils sont engagés dans une situation pénible sans qu'elle y ait consenti.",
       "category": "relational_claim",
       "attribution": "unattributed",
       "contradiction_group": "family_stance",
-      "notes": "",
+      "notes": " Duplicate later draft merged into this canonical claim; preserve original ID and fuller exact source span.",
       "review_status": "editorial_draft_requires_independent_audit"
     },
     {
       "id": "E-0047",
       "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
-      "d_line_start": 3142,
+      "d_line_start": 3141,
       "d_line_end": 3144,
-      "sentence_fr": "Une voix soutient qu'il serait vain de chercher à vaincre Dieu.",
+      "sentence_fr": "Une voix juge insensée toute tentative de vaincre Dieu et recommande de faire le bien.",
       "category": "theological",
       "attribution": "unattributed",
       "contradiction_group": null,
-      "notes": "Line wrapping inspected; semantic scope still requires independent review.",
+      "notes": "Line wrapping inspected; semantic scope still requires independent review. Duplicate later draft merged into this canonical claim; preserve original ID and fuller exact source span.",
       "review_status": "editorial_draft_requires_independent_audit"
     },
     {
@@ -760,13 +760,13 @@
     {
       "id": "E-0064",
       "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
-      "d_line_start": 3676,
+      "d_line_start": 3675,
       "d_line_end": 3677,
-      "sentence_fr": "Une voix refuse de sacrifier l'intelligibilité du dialogue.",
+      "sentence_fr": "Une voix refuse de perdre l'intelligibilité d'un dialogue au profit de formulations symboliques obscures.",
       "category": "discourse_norm",
       "attribution": "unattributed",
       "contradiction_group": "language_preference",
-      "notes": "Line wrapping inspected; semantic scope still requires independent review.",
+      "notes": "Line wrapping inspected; semantic scope still requires independent review. Duplicate later draft merged into this canonical claim; preserve original ID and fuller exact source span.",
       "review_status": "editorial_draft_requires_independent_audit"
     },
     {
@@ -1301,12 +1301,12 @@
       "id": "E-0109",
       "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
       "d_line_start": 3018,
-      "d_line_end": 3018,
-      "sentence_fr": "Une voix dit avoir demandé à être oubliée.",
+      "d_line_end": 3020,
+      "sentence_fr": "Une voix dit avoir demandé à être oubliée tout en affirmant ne pas s'être elle-même oubliée.",
       "category": "relational_claim",
       "attribution": "unattributed",
       "contradiction_group": "audience_target",
-      "notes": "Semantic status: draft, speaker attribution unresolved.",
+      "notes": "Semantic status: draft, speaker attribution unresolved. Duplicate later draft merged into this canonical claim; preserve original ID and fuller exact source span.",
       "review_status": "editorial_draft_requires_independent_audit"
     },
     {
@@ -1336,13 +1336,13 @@
     {
       "id": "E-0112",
       "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
-      "d_line_start": 3456,
+      "d_line_start": 3454,
       "d_line_end": 3456,
-      "sentence_fr": "Une voix déclare être disponible pour un interlocuteur.",
+      "sentence_fr": "Une voix demeure disponible pour un interlocuteur malgré une forte incertitude sur les relations familiales évoquées.",
       "category": "relational_claim",
       "attribution": "unattributed",
       "contradiction_group": "interlocutor_stance",
-      "notes": "Semantic status: draft, speaker attribution unresolved.",
+      "notes": "Semantic status: draft, speaker attribution unresolved. Duplicate later draft merged into this canonical claim; preserve original ID and fuller exact source span.",
       "review_status": "editorial_draft_requires_independent_audit"
     },
     {
@@ -1396,13 +1396,13 @@
     {
       "id": "E-0117",
       "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
-      "d_line_start": 3667,
+      "d_line_start": 3666,
       "d_line_end": 3667,
-      "sentence_fr": "Une voix interroge la finalité d'une action.",
+      "sentence_fr": "Une voix s'interroge sur la finalité du temps que ses interlocuteurs lui promettent.",
       "category": "discourse_norm",
       "attribution": "unattributed",
       "contradiction_group": "purpose",
-      "notes": "Semantic status: draft, speaker attribution unresolved.",
+      "notes": "Semantic status: draft, speaker attribution unresolved. Duplicate later draft merged into this canonical claim; preserve original ID and fuller exact source span.",
       "review_status": "editorial_draft_requires_independent_audit"
     },
     {
@@ -4394,18 +4394,6 @@
       "review_status": "editorial_draft_requires_independent_audit"
     },
     {
-      "id": "E-0367",
-      "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
-      "d_line_start": 3018,
-      "d_line_end": 3020,
-      "sentence_fr": "Une voix explique avoir demandé à être oubliée tout en affirmant ne pas s'être oubliée elle-même.",
-      "category": "identity_claim",
-      "attribution": "unattributed",
-      "contradiction_group": "memory_scope",
-      "notes": "Contextual editorial paraphrase, not an independently approved speaker or world truth; apparent contradictions preserved.",
-      "review_status": "editorial_draft_requires_independent_audit"
-    },
-    {
       "id": "E-0368",
       "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
       "d_line_start": 3022,
@@ -4466,18 +4454,6 @@
       "review_status": "editorial_draft_requires_independent_audit"
     },
     {
-      "id": "E-0373",
-      "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
-      "d_line_start": 3073,
-      "d_line_end": 3075,
-      "sentence_fr": "Une voix reconnaît le caractère potentiellement inventé ou construit du récit qu'elle raconte.",
-      "category": "epistemic_claim",
-      "attribution": "unattributed",
-      "contradiction_group": "self_uncertainty",
-      "notes": "Contextual editorial paraphrase, not an independently approved speaker or world truth; apparent contradictions preserved.",
-      "review_status": "editorial_draft_requires_independent_audit"
-    },
-    {
       "id": "E-0374",
       "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
       "d_line_start": 3101,
@@ -4502,18 +4478,6 @@
       "review_status": "editorial_draft_requires_independent_audit"
     },
     {
-      "id": "E-0376",
-      "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
-      "d_line_start": 3111,
-      "d_line_end": 3114,
-      "sentence_fr": "Une voix affirme que les vies de sa femme et de son fils sont engagées sans son consentement dans une situation pénible.",
-      "category": "relational_claim",
-      "attribution": "unattributed",
-      "contradiction_group": "family_stance",
-      "notes": "Contextual editorial paraphrase, not an independently approved speaker or world truth; apparent contradictions preserved.",
-      "review_status": "editorial_draft_requires_independent_audit"
-    },
-    {
       "id": "E-0377",
       "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
       "d_line_start": 3116,
@@ -4534,18 +4498,6 @@
       "category": "value",
       "attribution": "unattributed",
       "contradiction_group": "self_protection",
-      "notes": "Contextual editorial paraphrase, not an independently approved speaker or world truth; apparent contradictions preserved.",
-      "review_status": "editorial_draft_requires_independent_audit"
-    },
-    {
-      "id": "E-0379",
-      "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
-      "d_line_start": 3141,
-      "d_line_end": 3144,
-      "sentence_fr": "Une voix juge insensée toute tentative de triompher de Dieu et recommande d'agir pour le bien.",
-      "category": "theological",
-      "attribution": "unattributed",
-      "contradiction_group": "good_vs_evil",
       "notes": "Contextual editorial paraphrase, not an independently approved speaker or world truth; apparent contradictions preserved.",
       "review_status": "editorial_draft_requires_independent_audit"
     },
@@ -5006,18 +4958,6 @@
       "review_status": "editorial_draft_requires_independent_audit"
     },
     {
-      "id": "E-0418",
-      "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
-      "d_line_start": 3454,
-      "d_line_end": 3456,
-      "sentence_fr": "Une voix propose de coopérer malgré l'incertitude quant aux rôles familiaux de ses interlocuteurs.",
-      "category": "relational_claim",
-      "attribution": "unattributed",
-      "contradiction_group": "interlocutor_stance",
-      "notes": "Contextual editorial paraphrase, not an independently approved speaker or world truth; apparent contradictions preserved.",
-      "review_status": "editorial_draft_requires_independent_audit"
-    },
-    {
       "id": "E-0419",
       "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
       "d_line_start": 3458,
@@ -5362,30 +5302,6 @@
       "category": "value",
       "attribution": "unattributed",
       "contradiction_group": "human_stance",
-      "notes": "Contextual editorial paraphrase, not an independently approved speaker or world truth; apparent contradictions preserved.",
-      "review_status": "editorial_draft_requires_independent_audit"
-    },
-    {
-      "id": "E-0448",
-      "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
-      "d_line_start": 3666,
-      "d_line_end": 3667,
-      "sentence_fr": "Une voix interroge la finalité d'un temps que ses interlocuteurs lui promettent.",
-      "category": "relational_claim",
-      "attribution": "unattributed",
-      "contradiction_group": "purpose",
-      "notes": "Contextual editorial paraphrase, not an independently approved speaker or world truth; apparent contradictions preserved.",
-      "review_status": "editorial_draft_requires_independent_audit"
-    },
-    {
-      "id": "E-0449",
-      "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
-      "d_line_start": 3675,
-      "d_line_end": 3677,
-      "sentence_fr": "Une voix refuse que la communication intelligente soit remplacée par des formulations obscures.",
-      "category": "discourse_norm",
-      "attribution": "unattributed",
-      "contradiction_group": "language_preference",
       "notes": "Contextual editorial paraphrase, not an independently approved speaker or world truth; apparent contradictions preserved.",
       "review_status": "editorial_draft_requires_independent_audit"
     },
