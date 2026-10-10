@@ -44,7 +44,7 @@ def validate():
         raise ValueError("No affirmative independent semantic-review attestation.")
     if attestation.get("reviewer_type") != "independent_human" or not attestation.get("reviewer_name"):
         raise ValueError("No identified independent human reviewer.")
-    if not attestation.get("reviewed_at") or not attestation.get("conflicts_reviewed"):
+    if not attestation.get("reviewed_at") or attestation.get("conflicts_reviewed") is not True:
         raise ValueError("Unresolved conflict review or missing review date.")
     for file_name, expected_key in (("propositions_draft.json","proposition_register_sha256"),
                                     ("review_decisions.csv","review_decisions_sha256")):
@@ -52,6 +52,8 @@ def validate():
             raise ValueError("Independent signoff is stale or refers to different "+file_name)
     if attestation.get("source_sha256") != freeze["corpus_sha256"]:
         raise ValueError("Signoff source digest differs from frozen corpus.")
+    if digest(HERE / "extraction/review_signoff.json") != freeze.get("review_signoff_sha256"):
+        raise ValueError("Freeze manifest does not pin the independent review attestation.")
     hashes = freeze.get("files", {})
     for name in INPUTS:
         path = HERE / "frozen" / name
