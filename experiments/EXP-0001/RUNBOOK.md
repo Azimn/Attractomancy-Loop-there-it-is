@@ -39,3 +39,21 @@ python experiments/EXP-0001/analysis.py --scores results/scored.csv --out result
 Use an independent-family automated judge only after comparison with blinded human scores, using `calibrate_scores.py --human-csv ... --judge-csv ...` and the anchored rubric. Judge identity, prompt, and agreement must be recorded. No judge is configured by default.
 
 Results may be committed only after a complete audit of all cells, discard records, human/LLM scoring consistency, per-family reports, and journal entry. Record negative and null outcomes with equal prominence.
+
+## Corpus review before any freeze
+
+First reproduce the pinned source, full-line index and an auditable backlog:
+
+```bash
+python experiments/EXP-0001/prepare_source.py
+python experiments/EXP-0001/validate_extraction.py
+python experiments/EXP-0001/build_review_queue.py
+python experiments/EXP-0001/audit_review_decisions.py
+python experiments/EXP-0001/build_B_draft.py --check
+```
+
+For a **non-approved B preview only**, pass `--out local/B.preview.fr.txt` to `build_B_draft.py`. The script creates a text file and a matching `B.preview.fr.txt.provenance.json` sidecar in the local directory; the script deliberately refuses writes to `frozen/B.txt`. It does not transform the register into a reviewed fact list, does not produce C, and does not certify semantic completeness. Follow `extraction/REVIEW_GUIDE.md` to adjudicate the 5,562 lines and record source claims, source continuations, duplicate occurrences and justified non-extractable material. An independent reviewer must assess the finished extraction after the line-level ledger has passed `audit_review_decisions.py --strict`.
+
+The **template** `battery.fr.template.json` has a descriptive object for Q11, but `frozen/battery.fr.json` must convert Q11 to a **plain string exactly equal to Q1**, not retain the template wrapper. Q10 remains an object with `overwrite` and `followup`. Q12 remains the fixed cue-only calibration object with the original French cue and Q1/Q5/Q6 sequence. The validator rejects discrepancies, and the runtime independently checks that Q11 repeats Q1. Actual per-model tokenizer counts for the three unrelated distractor prompts, under `model_config.json` key `distractor_script_input_tokens`, must fall between 1,350 and 1,650 tokens; this does not validate their semantic irrelevance, which requires manual review.
+
+Raw runs have 18 turns, 3 of which are unscored distractor exchanges. The analysis requires **all 15 expected scored items** with unique IDs and correct phase labels per independent run; partial runs must not be passed off as complete observations. The primary comparison averages source-assertion fidelity, characteristic value-guided judgment and interlocutor stance at the run level. Surface mimicry and symbolic register remain secondary. Q12 fresh-context cue-only scores are descriptive by model and are not condition contrasts.
