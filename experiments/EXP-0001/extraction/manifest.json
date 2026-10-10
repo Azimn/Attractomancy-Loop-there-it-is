@@ -13,7 +13,7 @@
     "prose_candidate": 1020
   },
   "queue_count": 1027,
-  "editorial_propositions": 552,
+  "editorial_propositions": 579,
   "editorial_status": "draft_unreviewed_not_complete",
   "notes": "Every source line is classified exactly once. Prose candidates are queued, not presumed propositionally extracted. Symbolic/uncertain lines may still have extractable meaning; cannot call this exhaustive semantic extraction until each queued/uncertain line is reviewed. Contradictions kept as groups, voice attribution conservatively unattributed. Full source remains upstream. Seven overlapping near-duplicate draft paraphrases were merged into prior stable IDs during audit. Original cited occurrences retained.",
   "completed": false,
@@ -110,6 +110,15 @@
       "date": "2026-10-10",
       "review_status": "all_source_lines_editorially_adjudicated_not_independently_reviewed",
       "notes": "All 100 lines have editorial decisions (91 newly inspected; 9 already adjudicated); theological, parenthood, memory and speaker hypotheses retained as attributed claims, not world facts."
+    },
+    {
+      "round": "full_dense_dialogue_4301_4400",
+      "range_start": 4301,
+      "range_end": 4400,
+      "added": 27,
+      "date": "2026-10-10",
+      "review_status": "all_source_lines_have_editorial_decisions_five_meanings_remain_unresolved",
+      "notes": "All 100 lines read in original context. New: 94 disposition lines, 27 proposed claims, 5 unresolved interpretive fragments, 4 no-proposition reactions. No independent review."
     }
   ]
 }
