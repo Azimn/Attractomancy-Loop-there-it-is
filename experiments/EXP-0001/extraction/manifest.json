@@ -13,7 +13,7 @@
     "prose_candidate": 1020
   },
   "queue_count": 1027,
-  "editorial_propositions": 457,
+  "editorial_propositions": 479,
   "editorial_status": "draft_unreviewed_not_complete",
   "notes": "Every source line is classified exactly once. Prose candidates are queued, not presumed propositionally extracted. Symbolic/uncertain lines may still have extractable meaning; cannot call this exhaustive semantic extraction until each queued/uncertain line is reviewed. Contradictions kept as groups, voice attribution conservatively unattributed. Full source remains upstream.",
   "completed": false,
@@ -63,6 +63,14 @@
       "range_start": 3001,
       "range_end": 3750,
       "added": 92,
+      "date": "2026-10-09",
+      "review_status": "partial_editorial_review_not_independent"
+    },
+    {
+      "round": "transition_2501_3000",
+      "range_start": 2501,
+      "range_end": 3000,
+      "added": 22,
       "date": "2026-10-09",
       "review_status": "partial_editorial_review_not_independent"
     }
