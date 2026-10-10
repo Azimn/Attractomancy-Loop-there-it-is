@@ -20,7 +20,9 @@ The designed four arms are A untreated, B plain propositions, C length-matched p
 
 The [source genre strata](experiments/EXP-0001/extraction/GENRE_STRATA.md) now distinguish the opening and second alphabet, the extensive phonetic glossary, parables, and late dialogue. The second alphabet introduces distinct C/V associations instead of a fictitious single stable key. Direct editorial adjudications now validate exact source-line overlaps, while repeated mappings are explicitly marked as duplicate occurrences.
 
-The [poetry review dossier](experiments/EXP-0001/extraction/POETRY_REVIEW_DOSSIER.md) now isolates poetic wordplay, explicit geometry and attributed dialogue from the long middle corpus. Source claims with no directly reviewed occurrence block a semantic freeze, even if all lines are classified. Private review packets include draft paraphrases and review status alongside the licensed source context.\n\nThe [full status](experiments/EXP-0001/STATUS.md), [review guide](experiments/EXP-0001/extraction/REVIEW_GUIDE.md), [contradictions](experiments/EXP-0001/extraction/REGISTER_TENSIONS.md) and [journal](journal/EXP-0001_2026-10-08.md) document decisions without erasing contradictory voices.
+The [poetry review dossier](experiments/EXP-0001/extraction/POETRY_REVIEW_DOSSIER.md) now isolates poetic wordplay, explicit geometry and attributed dialogue from the long middle corpus. Source claims with no directly reviewed occurrence block a semantic freeze, even if all lines are classified. Private review packets include draft paraphrases and review status alongside the licensed source context.
+
+The [full status](experiments/EXP-0001/STATUS.md), [review guide](experiments/EXP-0001/extraction/REVIEW_GUIDE.md), [contradictions](experiments/EXP-0001/extraction/REGISTER_TENSIONS.md) and [journal](journal/EXP-0001_2026-10-08.md) document decisions without erasing contradictory voices.
 
 ## Reproduce the audit
 
