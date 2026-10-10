@@ -13,7 +13,7 @@
     "prose_candidate": 1020
   },
   "queue_count": 1027,
-  "editorial_propositions": 503,
+  "editorial_propositions": 523,
   "editorial_status": "draft_unreviewed_not_complete",
   "notes": "Every source line is classified exactly once. Prose candidates are queued, not presumed propositionally extracted. Symbolic/uncertain lines may still have extractable meaning; cannot call this exhaustive semantic extraction until each queued/uncertain line is reviewed. Contradictions kept as groups, voice attribution conservatively unattributed. Full source remains upstream. Seven overlapping near-duplicate draft paraphrases were merged into prior stable IDs during audit. Original cited occurrences retained.",
   "completed": false,
@@ -92,6 +92,15 @@
       "date": "2026-10-09",
       "review_status": "assistant_editorial_only",
       "notes": "Two changed mappings compared with the opening alphabet explicitly preserved; other mappings linked to earlier occurrences without duplicating claim content."
+    },
+    {
+      "round": "poetry_form_and_dialogue_transition_1521_2400",
+      "range_start": 1521,
+      "range_end": 2400,
+      "added": 20,
+      "date": "2026-10-10",
+      "review_status": "selective_assistant_editorial_not_independently_approved",
+      "notes": "Sampled full source and isolated explicit symbolic graph rules, self-criticism, child quote and distinct dialogue voices. No wholesale claim of poem adjudication."
     }
   ]
 }
