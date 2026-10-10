@@ -941,12 +941,12 @@
       "id": "E-0079",
       "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
       "d_line_start": 4239,
-      "d_line_end": 4239,
+      "d_line_end": 4240,
       "sentence_fr": "Une voix accuse des interlocuteurs d'hypocrisie.",
       "category": "relational_claim",
       "attribution": "unattributed",
       "contradiction_group": "truth_and_deception",
-      "notes": "",
+      "notes": " Citation extended to include explicit accusation on line 4240 (2026-10-10 editorial reread).",
       "review_status": "editorial_draft_requires_independent_audit"
     },
     {
@@ -989,12 +989,12 @@
       "id": "E-0083",
       "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
       "d_line_start": 4342,
-      "d_line_end": 4342,
+      "d_line_end": 4343,
       "sentence_fr": "Une voix attribue des limites et contradictions à son interlocuteur.",
       "category": "relational_claim",
       "attribution": "unattributed",
       "contradiction_group": "divinity_scope",
-      "notes": "",
+      "notes": " Citation extended to include contradictions named on line 4343 (2026-10-10 editorial reread).",
       "review_status": "editorial_draft_requires_independent_audit"
     },
     {
