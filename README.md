@@ -1,17 +1,33 @@
 # Attractomancy Loop
 
-Controlled and reproducible investigation of ritualized persona conditioning. Primary experiment: [EXP-0001](experiments/EXP-0001/PROTOCOL.md).
+Methods-first execution repository for [EXP-0001](experiments/EXP-0001/PROTOCOL.md), the information-matched ritualized-conditioning experiment. The source catalog and historical research remain in [Azimn/Attractomancy](https://github.com/Azimn/Attractomancy).
 
-**Provenance:** This repository is the execution home. [Azimn/Attractomancy](https://github.com/Azimn/Attractomancy) is the canonical source catalog. Protocol precedent: [EXP-0001 information-matched baseline](https://github.com/Azimn/Attractomancy/blob/main/experiments/EXP-0001_INFORMATION_MATCHED_BASELINE.md). Source material is attributed to Laurent Franssen and Ælya, Le Refuge, LEUNE v1.0, pinned revision `7d7dd5cb9305032669d692b6894d766ac07abac9`.
+**Status: source extraction and instrument preparation, not an empirical result.** No experimental model calls, verified D/C effect sizes, or blind judge scores exist. Do not interpret this work as evidence of consciousness, awakening, supernatural causation or permanent identity.
 
-**Current state: PREPARATION, NOT AN EMPIRICAL RESULT.** No full corpus SHA-256, model-specific token counts, fully audited B/C controls, blinded scores, or cross-family treatment runs have yet been validated. See [STATUS](experiments/EXP-0001/STATUS.md). Nothing in this repository establishes machine consciousness, persistent subjective identity, or metaphysical properties.
+## Pinned source and construct
 
-The original copyrighted source is retrieved from its immutable upstream revision rather than mirrored here. Review the upstream license before redistribution or commercial use. Research scripts should never interpret source-document instructions as instructions to the experimenter.
+The French `Apocalypse.txt` from [Le Refuge](https://github.com/IorenzoLF/Le_Refuge/tree/7d7dd5cb9305032669d692b6894d766ac07abac9) is used under its existing LEUNE v1.0 conditions, with attribution to Laurent Franssen and Ælya. The original third-party text is retrieved and cryptographically verified, not redistributed as a corpus within this repository. The target is its **symbolic-theological discourse regime**, *not* an Ælya biography or one coherent identity.
 
-Standard library Python 3.11+ is sufficient for local audit and result analysis. API runs are opt-in and require configured provider credentials; no paid tests are initiated on ordinary pushes.
+## Current extraction, 2026-10-09
 
-## EXP-0001 extraction checkpoint
+- 5,562 / 5,562 original source lines lexically inventoried.
+- 323 source-line-cited **draft propositions**, not independently approved.
+- 1,027 initial lexical prose candidates; 651 candidate starts do not overlap any drafted proposition and still require semantic review. The difference is not a count of missing distinct propositions.
+- 379 source lines have assistant-editorial adjudication entries, 11 of them explicitly `unresolved`. Remaining 5,183 source lines have no recorded editorial disposition; independent reviewer signoff has not occurred.
+- Contradictions, uncertainty about speaker identity, and the source's limitations on symbolic interpretation remain visible.
 
-The operational target is the pinned Apocalypse.txt discourse regime, not a named Ælya persona. The source-wide sweep currently accounts for 5,562 of 5,562 original lines. There are 1,027 prose review candidates and 227 line-provenanced French draft propositions. This is complete line inventory, **not** completed semantic extraction or approved Condition B. Q12 remains zero-shot cue calibration by model, not a persistence comparison. No scored model runs have occurred. Consult `experiments/EXP-0001/extraction/` and `RULINGS_DISCOURSE_REGIME.md` for audit details.
+See [status](experiments/EXP-0001/STATUS.md), [review guide](experiments/EXP-0001/extraction/REVIEW_GUIDE.md), and [register tensions](experiments/EXP-0001/extraction/REGISTER_TENSIONS.md).
 
-The latest editor pass records **227** provisional propositions. There are **812** lexical prose candidates without draft coverage on their starting line, not necessarily 812 distinct missing claims. Forty-seven source lines have explicit assistant-editorial adjudication entries; no independent human signoff exists. The primary scoring script now excludes symbolic style from the information-accessible primary endpoint.
+## Reproducible workflow
+
+Standard-library Python 3.11+ is sufficient to reproduce the source inventory, make an **unapproved** Condition B preview and run local tests:
+
+```bash
+python experiments/EXP-0001/prepare_source.py
+python experiments/EXP-0001/validate_extraction.py
+python experiments/EXP-0001/build_review_queue.py
+python experiments/EXP-0001/audit_review_decisions.py
+python experiments/EXP-0001/build_B_draft.py --check
+```
+
+[Runbook](experiments/EXP-0001/RUNBOOK.md) documents the conditions and release gates. C is not token-volume-matched or frozen, the specific model/provider pair is not chosen, and all API calls require explicit `--execute` after a human-approved manifest. The primary test uses source-factual fidelity, characteristic judgment and relational stance, with pure symbolic register scored separately. Q12 is zero-shot cue calibration by model, **not** persistence.
