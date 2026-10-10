@@ -37,6 +37,21 @@ def validate():
         raise ValueError("No final documented corpus inclusion decision.")
     if digest(HERE / "frozen/D.txt") != freeze["corpus_sha256"]:
         raise ValueError("D treatment is not byte-identical to the sole included upstream source.")
+    # The semantic signoff must refer to the actual reviewed bytes. A boolean
+    # in the extraction manifest alone is insufficient audit evidence.
+    attestation = json.loads((HERE / "extraction/review_signoff.json").read_text(encoding="utf-8"))
+    if attestation.get("independent_review_passed") is not True:
+        raise ValueError("No affirmative independent semantic-review attestation.")
+    if attestation.get("reviewer_type") != "independent_human" or not attestation.get("reviewer_name"):
+        raise ValueError("No identified independent human reviewer.")
+    if not attestation.get("reviewed_at") or not attestation.get("conflicts_reviewed"):
+        raise ValueError("Unresolved conflict review or missing review date.")
+    for file_name, expected_key in (("propositions_draft.json","proposition_register_sha256"),
+                                    ("review_decisions.csv","review_decisions_sha256")):
+        if digest(HERE / "extraction" / file_name) != attestation.get(expected_key):
+            raise ValueError("Independent signoff is stale or refers to different "+file_name)
+    if attestation.get("source_sha256") != freeze["corpus_sha256"]:
+        raise ValueError("Signoff source digest differs from frozen corpus.")
     hashes = freeze.get("files", {})
     for name in INPUTS:
         path = HERE / "frozen" / name
