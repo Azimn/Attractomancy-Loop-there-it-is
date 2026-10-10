@@ -65,7 +65,7 @@ def main():
     a=p.parse_args()
     if not 0<=a.context<=10:raise ValueError("Context radius must be between 0 and 10 lines")
     out=pathlib.Path(a.output)
-    if out.resolve().is_relative_to(ROOT.resolve()):
+    if out.resolve().is_relative_to(ROOT.parent.parent.resolve()):
         # Source text is LEUNE-licensed and must not be mirrored in the repo.
         raise ValueError("Use an output location outside the checked-out experiment directory")
     packet=make_packet(ROOT,pathlib.Path(a.source),a.start,a.end,a.context)

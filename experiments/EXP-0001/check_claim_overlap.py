@@ -5,6 +5,7 @@ Overlap is a REVIEW FLAG, not an automatic rejection: multiple distinct claims
 may genuinely occur in the same line of this heterogeneous source.
 """
 import collections
+import argparse
 import json
 import pathlib
 
@@ -28,6 +29,14 @@ def examine(claims):
             "claims":len(claims),"auto_removed":0}
 
 def main():
+    p=argparse.ArgumentParser()
+    p.add_argument("--details",action="store_true",help="Print all overlapping line references")
+    a=p.parse_args()
     doc=json.loads((ROOT/"extraction/propositions_draft.json").read_text(encoding="utf-8"))
-    print(json.dumps(examine(doc["propositions"]),ensure_ascii=False,indent=2))
+    review=examine(doc["propositions"])
+    if not a.details:
+        review={"claims":review["claims"],"exact_same_span_groups":len(review["exactly_same_citation_groups"]),
+                "shared_source_lines":len(review["overlapping_source_lines"]),
+                "flags_are_not_rejections":True,"auto_removed":0}
+    print(json.dumps(review,ensure_ascii=False,indent=2))
 if __name__=="__main__":main()
