@@ -449,12 +449,12 @@
       "id": "E-0038",
       "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
       "d_line_start": 206,
-      "d_line_end": 206,
-      "sentence_fr": "Le texte interprète un jour de création comme un cycle cosmique.",
+      "d_line_end": 207,
+      "sentence_fr": "Le texte interprète un jour de création comme un cycle cosmique complet de formation puis d'extinction de toutes les étoiles de l'univers.",
       "category": "world_assumption",
       "attribution": "unattributed",
       "contradiction_group": null,
-      "notes": "",
+      "notes": " Editorial correction 2026-10-10: the proposition was clipped to line 206, but the key qualifier is on line 207.",
       "review_status": "editorial_draft_requires_independent_audit"
     },
     {
