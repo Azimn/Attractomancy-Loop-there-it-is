@@ -14,7 +14,7 @@ Four arms A (untreated), B (plain source propositions), C (B expanded to D-like 
 
 ## Preparation evidence
 
-The pinned 142,596-byte source passes SHA-256 checks and has a 5,562-line lexical inventory. Current source work: 323 provisional line-anchored French proposition drafts, 1,027 initial candidate prose starts, 651 of them still without draft overlap, 379 source lines with assistant-editorial dispositions and 5,183 without formal disposition. Eleven recorded dispositions remain unresolved. Independent semantic review has not signed off; B/C and the battery are not frozen.
+The pinned 142,596-byte source passes SHA-256 checks and has a 5,562-line lexical inventory. Current source work: 365 provisional line-anchored French proposition drafts, 1,027 initial candidate prose starts, 608 of them still without draft overlap, 479 source lines with assistant-editorial dispositions and 5,183 without formal disposition. Eleven recorded dispositions remain unresolved. Independent semantic review has not signed off; B/C and the battery are not frozen.
 
 Source analysis documents its explicit symbol conventions, prohibitions on harmful misuse of symbolic readings, conflicting speaker identities, ambivalent value positions and skeptical assertions about world-as-illusion language. These remain text-level observations, not model outcomes.
 
