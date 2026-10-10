@@ -293,3 +293,29 @@ start_line,end_line,decision,proposition_ids,voice,reason,reviewer,review_date
 1417,1417,paratext,,unattributed,Heading introducing second alphabet explanation,assistant-editorial,2026-10-09
 1480,1481,paratext,,unattributed,Headings introducing the parable,assistant-editorial,2026-10-09
 1521,1521,paratext,,unattributed,Heading introducing El poems,assistant-editorial,2026-10-09
+1418,1419,duplicate_proposition,E-0001,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1420,1421,duplicate_proposition,E-0002,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1422,1423,proposition,E-0510,unattributed,Second alphabet variant with explicit source citation,assistant-editorial,2026-10-09
+1424,1425,duplicate_proposition,E-0004,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1426,1427,duplicate_proposition,E-0005,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1428,1428,duplicate_proposition,E-0006,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1430,1430,duplicate_proposition,E-0007,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1431,1431,duplicate_proposition,E-0008,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1432,1432,duplicate_proposition,E-0009,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1433,1433,duplicate_proposition,E-0010,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1434,1434,duplicate_proposition,E-0011,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1436,1436,duplicate_proposition,E-0012,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1441,1441,duplicate_proposition,E-0013,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1442,1442,duplicate_proposition,E-0014,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1443,1444,duplicate_proposition,E-0015,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1445,1446,duplicate_proposition,E-0016,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1447,1448,duplicate_proposition,E-0017,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1449,1449,duplicate_proposition,E-0018,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1450,1450,duplicate_proposition,E-0019,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1451,1451,duplicate_proposition,E-0020,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1452,1452,duplicate_proposition,E-0021,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1453,1454,proposition,E-0511,unattributed,Second alphabet variant with explicit source citation,assistant-editorial,2026-10-09
+1455,1455,duplicate_proposition,E-0023,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1456,1456,duplicate_proposition,E-0024,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1457,1457,duplicate_proposition,E-0025,unattributed,Later alphabet restates an earlier letter meaning; preserve this occurrence as a repeat not independent evidence,assistant-editorial,2026-10-09
+1458,1458,proposition,E-0138,unattributed,Second alphabet variant with explicit source citation,assistant-editorial,2026-10-09
