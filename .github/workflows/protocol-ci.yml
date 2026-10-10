@@ -34,6 +34,8 @@ jobs:
         run: python experiments/EXP-0001/check_claim_overlap.py
       - name: Smoke test private review packet with upstream pinned source
         run: python experiments/EXP-0001/make_review_packet.py --start 3001 --end 3010 --output /tmp/exp0001_private_review_sample.jsonl
+      - name: Prioritize open source review work without approval
+        run: python experiments/EXP-0001/open_review_worklist.py --top 5
       - name: Confirm no unearned experiment freeze
         run: |
           python - <<'PY'
