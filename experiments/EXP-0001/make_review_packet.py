@@ -24,11 +24,14 @@ def make_packet(root, source, start, end, context=2):
         raise ValueError("Invalid review range")
     props=json.loads((root/"extraction/propositions_draft.json").read_text(encoding="utf-8"))["propositions"]
     by_line=collections.defaultdict(list)
+    by_id={p["id"]:p for p in props}
     for p in props:
         for n in range(p["d_line_start"],p["d_line_end"]+1):
             by_line[n].append(p["id"])
     with (root/"extraction/review_decisions.csv").open(encoding="utf-8",newline="") as f:
         decisions=list(csv.DictReader(f))
+    directly_reviewed_claim_ids={id for row in decisions if row["decision"] in ("proposition","continuation")
+                                 for id in row["proposition_ids"].split(";") if id}
     lookup={}
     for row in decisions:
         for n in range(int(row["start_line"]),int(row["end_line"])+1):
@@ -41,6 +44,8 @@ def make_packet(root, source, start, end, context=2):
     packet=[]
     for n in range(start,end+1):
         row=lookup.get(n)
+        linked_claims=[by_id[id] for id in by_line[n]]
+        pending_claims=[p["id"] for p in linked_claims if p["id"] not in directly_reviewed_claim_ids]
         packet.append({
             "source_line":n, "literal_line":lines[n-1],
             "context_before":[{"source_line":i,"text":lines[i-1]}
@@ -49,9 +54,16 @@ def make_packet(root, source, start, end, context=2):
                              for i in range(n+1,min(len(lines),n+context)+1)],
             "lexical_class":triage[n-1]["classification"],
             "proposition_ids":by_line[n],
+            "draft_claims":[{"id":p["id"],"sentence_fr":p["sentence_fr"],
+                "source_lines":[p["d_line_start"],p["d_line_end"]],
+                "source_form":p.get("source_form","not_yet_coded"),
+                "contradiction_group":p.get("contradiction_group"),
+                "review_status":p["review_status"]} for p in linked_claims],
+            "claim_ids_missing_direct_editorial_decision":pending_claims,
             "editorial_decision":row["decision"] if row else None,
+            "editorial_reason":row["reason"] if row else None,
             "human_approved":False,
-            "requires_review":row is None or row["decision"]=="unresolved",
+            "requires_review":row is None or row["decision"]=="unresolved" or bool(pending_claims),
         })
     return packet
 
