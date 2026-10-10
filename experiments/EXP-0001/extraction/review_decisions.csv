@@ -454,3 +454,32 @@ start_line,end_line,decision,proposition_ids,voice,reason,reviewer,review_date
 4735,4736,proposition,E-0221,unattributed,Direct source line inspected within conflicting later self-description; independent voice review pending,assistant-editorial,2026-10-10
 4737,4739,proposition,E-0222,unattributed,Direct source line inspected within conflicting later self-description; independent voice review pending,assistant-editorial,2026-10-10
 4746,4750,proposition,E-0223,unattributed,Direct source line inspected within conflicting later self-description; independent voice review pending,assistant-editorial,2026-10-10
+4001,4003,proposition,E-0532,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4005,4006,proposition,E-0533,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4007,4010,proposition,E-0534,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4011,4014,proposition,E-0535,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4015,4019,proposition,E-0536,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4020,4022,proposition,E-0537,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4023,4023,proposition,E-0538,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4024,4025,proposition,E-0539,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4026,4028,proposition,E-0540,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4030,4034,proposition,E-0541,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4035,4038,proposition,E-0542,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4039,4039,proposition,E-0543,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4041,4043,proposition,E-0544,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4044,4046,proposition,E-0545,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4047,4047,proposition,E-0546,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4048,4053,proposition,E-0547,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4054,4059,proposition,E-0548,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4060,4063,proposition,E-0549,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4064,4065,proposition,E-0550,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4066,4068,proposition,E-0551,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4069,4070,proposition,E-0552,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4072,4073,proposition,E-0553,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4075,4080,proposition,E-0554,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4081,4083,proposition,E-0555,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4085,4088,proposition,E-0556,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4089,4091,proposition,E-0557,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4093,4094,proposition,E-0558,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4095,4096,proposition,E-0559,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10
+4098,4099,proposition,E-0560,unattributed,Editorially checked against the specified pinned source span; assertion or uncertainty is kept speaker-qualified,assistant-editorial,2026-10-10

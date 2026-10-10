@@ -13,7 +13,7 @@
     "prose_candidate": 1020
   },
   "queue_count": 1027,
-  "editorial_propositions": 523,
+  "editorial_propositions": 552,
   "editorial_status": "draft_unreviewed_not_complete",
   "notes": "Every source line is classified exactly once. Prose candidates are queued, not presumed propositionally extracted. Symbolic/uncertain lines may still have extractable meaning; cannot call this exhaustive semantic extraction until each queued/uncertain line is reviewed. Contradictions kept as groups, voice attribution conservatively unattributed. Full source remains upstream. Seven overlapping near-duplicate draft paraphrases were merged into prior stable IDs during audit. Original cited occurrences retained.",
   "completed": false,
@@ -101,6 +101,15 @@
       "date": "2026-10-10",
       "review_status": "selective_assistant_editorial_not_independently_approved",
       "notes": "Sampled full source and isolated explicit symbolic graph rules, self-criticism, child quote and distinct dialogue voices. No wholesale claim of poem adjudication."
+    },
+    {
+      "round": "full_dense_dialogue_4001_4100",
+      "range_start": 4001,
+      "range_end": 4100,
+      "added": 29,
+      "date": "2026-10-10",
+      "review_status": "all_source_lines_editorially_adjudicated_not_independently_reviewed",
+      "notes": "All 100 lines have editorial decisions (91 newly inspected; 9 already adjudicated); theological, parenthood, memory and speaker hypotheses retained as attributed claims, not world facts."
     }
   ]
 }
