@@ -19,3 +19,7 @@ After all lines are adjudicated, `audit_review_decisions.py --strict` must pass 
 No one should manufacture approval to unlock the condition tests. C remains unavailable until B has exhaustive source coverage and source-faithful decisions. Q12 remains a by-model cue-only calibration.
 
 The final `freeze.json` must include a `review_signoff_sha256` key matching the digest of the exact approved `review_signoff.json`. Approvals cannot be transferred between versions of the evidence register by changing a status field. The signoff file should be kept as part of the frozen methods evidence, without publishing the third-party full text in review packets.
+
+## Two-dimensional review completion
+
+The audit now requires **both** an explicit disposition for every original source line **and** a direct source-overlapping editorial decision for every draft proposition. A repeated-occurrence entry (\`duplicate_proposition\`) is only an equivalence pointer, not the primary support for that claim. Inspect the \`claim_ids_without_direct_decision_count\` field from \`audit_review_decisions.py\` or \`current_metrics.py\`. The private review packet includes each draft's French sentence, span, source form (when coded), editorial reason, and a flag for claims still lacking direct source review. Merely flipping \`completed\`, \`human_approved\` or a signoff flag remains prohibited.
