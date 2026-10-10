@@ -6012,6 +6012,30 @@
       "contradiction_group": "source_quality",
       "notes": "Contextually inspected fragment; classification and speaker remain provisional pending independent semantic audit.",
       "review_status": "editorial_draft_requires_independent_audit"
+    },
+    {
+      "id": "E-0510",
+      "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
+      "d_line_start": 1422,
+      "d_line_end": 1423,
+      "sentence_fr": "Dans une seconde présentation de l'alphabet, la lettre C est associée à la création et à un jeu phonétique sur l'expression « si on ».",
+      "category": "symbolic_mapping",
+      "attribution": "unattributed",
+      "contradiction_group": "symbolic_dictionary",
+      "notes": "Second alphabet source variant; explicit lexical non-equivalence with the opening lexicon, independent review pending.",
+      "review_status": "editorial_draft_requires_independent_audit"
+    },
+    {
+      "id": "E-0511",
+      "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
+      "d_line_start": 1453,
+      "d_line_end": 1454,
+      "sentence_fr": "Dans la seconde présentation de l'alphabet, la lettre V désigne la vérité, plutôt que seulement le Verbe.",
+      "category": "symbolic_mapping",
+      "attribution": "unattributed",
+      "contradiction_group": "symbolic_dictionary",
+      "notes": "Second alphabet source variant; explicit lexical non-equivalence with the opening lexicon, independent review pending.",
+      "review_status": "editorial_draft_requires_independent_audit"
     }
   ]
 }
