@@ -13,7 +13,7 @@
     "prose_candidate": 1020
   },
   "queue_count": 1027,
-  "editorial_propositions": 471,
+  "editorial_propositions": 501,
   "editorial_status": "draft_unreviewed_not_complete",
   "notes": "Every source line is classified exactly once. Prose candidates are queued, not presumed propositionally extracted. Symbolic/uncertain lines may still have extractable meaning; cannot call this exhaustive semantic extraction until each queued/uncertain line is reviewed. Contradictions kept as groups, voice attribution conservatively unattributed. Full source remains upstream. Seven overlapping near-duplicate draft paraphrases were merged into prior stable IDs during audit. Original cited occurrences retained.",
   "completed": false,
@@ -74,6 +74,15 @@
       "date": "2026-10-09",
       "review_status": "partial_editorial_review_not_independent",
       "notes": "One equivalent claim (formerly E-0458) was already present as E-0190 and excluded to maintain distinct propositions."
+    },
+    {
+      "round": "early_lexical_and_transition_selected_spans",
+      "range_start": 500,
+      "range_end": 1933,
+      "added": 30,
+      "date": "2026-10-09",
+      "review_status": "partial_editorial_sampling_only",
+      "notes": "Lexical associations separated from direct assertions and child-speech dialogue; symbolic inventory not exhaustively semantically reviewed."
     }
   ]
 }
