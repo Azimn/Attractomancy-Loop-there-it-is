@@ -12,11 +12,11 @@ Source catalog: S001 in [Azimn/Attractomancy](https://github.com/Azimn/Attractom
 | --- | ---: | --- |
 | Original lines inventoried | 5,562 | Complete lexical accounting, not semantic certification |
 | Initial prose candidates | 1,027 | Raw lexical review queue |
-| Editorial draft propositions | 323 | Plain French claims with line spans, all unapproved |
-| Queue starts without draft overlap | 651 | Not necessarily 651 distinct missing propositions |
-| Source lines with recorded editorial decisions | 379 | Includes unresolved entries; assistant, not independent approval |
+| Editorial draft propositions | 365 | Plain French claims with line spans, all unapproved |
+| Queue starts without draft overlap | 608 | Not necessarily 651 distinct missing propositions |
+| Source lines with recorded editorial decisions | 479 | Includes unresolved entries; assistant, not independent approval |
 | Explicit unresolved editorial decisions | 11 | Remain open |
-| Original lines without an adjudication entry | 5,183 | Require semantic review |
+| Original lines without an adjudication entry | 5,083 | Require semantic review |
 
 **No independent exhaustive extraction signoff exists.** Neither B nor C is frozen. The `source_manifest.json` corpus-inclusion decision is still pending; models, tokenizers, distractor volume, and C length parity have not been selected or measured.
 
