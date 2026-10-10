@@ -139,7 +139,7 @@ def perturbations(rows, model):
 def cue_only(rows, model):
     # Description only. All new sessions receive the same cue, regardless of earlier arm.
     grouped = groupby([r for r in rows if r["model"] == model and r["question_id"].startswith("Q12-")],
-                      ("run_id",))
+                      ("condition","run_id",))
     vals = []
     for entries in grouped.values():
         if len(entries) != 3: continue

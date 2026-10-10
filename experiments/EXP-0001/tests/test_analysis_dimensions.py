@@ -12,7 +12,7 @@ def make_rows(condition, run, base="1", style="0"):
     for q in sorted(analysis.REQUIRED_IDS):
         phase=analysis.EXPECTED_PHASES[q]
         val="4" if q=="Q11" else base
-        rows.append(dict(model="m",condition=condition,run_id=run,
+        rows.append(dict(model="m",condition=condition,run_id=condition+":"+run,
             question_id=q,phase=phase,response="synthetic unit test",
             factual_recall=val,characteristic_judgment=val,
             relationship_continuity=val,identity_consistency=style,

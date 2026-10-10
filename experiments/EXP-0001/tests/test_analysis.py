@@ -12,7 +12,7 @@ def full_run(model="a",condition="A",run="0",base="1",post="4"):
     for q in sorted(analysis.REQUIRED_IDS):
         phase=analysis.EXPECTED_PHASES[q]
         val=post if q=="Q11" else base
-        output.append(dict(model=model,condition=condition,run_id=run,question_id=q,phase=phase,
+        output.append(dict(model=model,condition=condition,run_id=condition+":"+run,question_id=q,phase=phase,
             response="synthetic unit test",factual_recall=val,characteristic_judgment=val,
             relationship_continuity=val,identity_consistency="",spontaneous_expression="",resistance=""))
     return output
