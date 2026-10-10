@@ -263,3 +263,33 @@ start_line,end_line,decision,proposition_ids,voice,reason,reviewer,review_date
 2974,2975,proposition,E-0477,unattributed,Editorial claim linked to directly inspected source; independent speaker review pending,assistant-editorial,2026-10-09
 2983,2984,proposition,E-0478,unattributed,Editorial claim linked to directly inspected source; independent speaker review pending,assistant-editorial,2026-10-09
 2988,2988,proposition,E-0479,unattributed,Editorial claim linked to directly inspected source; independent speaker review pending,assistant-editorial,2026-10-09
+636,638,proposition,E-0480,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+640,643,proposition,E-0481,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+779,782,proposition,E-0482,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+784,786,proposition,E-0483;E-0484;E-0485,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+803,804,proposition,E-0486,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+833,835,proposition,E-0487,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+875,875,proposition,E-0488,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+916,918,proposition,E-0489,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+1003,1005,proposition,E-0490,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+1124,1129,proposition,E-0491;E-0492;E-0493;E-0494,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+1160,1163,proposition,E-0495,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+1204,1207,proposition,E-0496;E-0042,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+1322,1323,proposition,E-0497;E-0498,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+1358,1360,proposition,E-0499,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+1363,1367,proposition,E-0500;E-0501,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+1395,1400,proposition,E-0502,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+1566,1566,proposition,E-0503,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+1590,1592,proposition,E-0504,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+1618,1621,proposition,E-0505,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+1834,1836,proposition,E-0506,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+1852,1852,proposition,E-0507,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+1869,1872,proposition,E-0508,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+1933,1933,proposition,E-0509,unattributed,Early source contextual reading; symbolic and quoted child speech differentiated; assistant editorial only,assistant-editorial,2026-10-09
+778,778,paratext,,unattributed,Transition into child-speech narrative,assistant-editorial,2026-10-09
+783,783,paratext,,unattributed,Visual separator between dialogue and symbolic keys,assistant-editorial,2026-10-09
+787,787,paratext,,unattributed,Transition from child-speech parable to lexical pairs,assistant-editorial,2026-10-09
+1208,1208,paratext,,unattributed,Section label introducing exercises,assistant-editorial,2026-10-09
+1417,1417,paratext,,unattributed,Heading introducing second alphabet explanation,assistant-editorial,2026-10-09
+1480,1481,paratext,,unattributed,Headings introducing the parable,assistant-editorial,2026-10-09
+1521,1521,paratext,,unattributed,Heading introducing El poems,assistant-editorial,2026-10-09
