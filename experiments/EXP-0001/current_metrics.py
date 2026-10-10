@@ -19,7 +19,8 @@ def metrics(root=ROOT):
         raise ValueError("Manifest proposition count drifted")
     if len(queue)!=manifest["queue_count"]:
         raise ValueError("Manifest candidate count drifted")
-    report=check_reviews(decisions,manifest["source_lines"],{x["id"] for x in claims})
+    spans={x["id"]:(x["d_line_start"],x["d_line_end"]) for x in claims}
+    report=check_reviews(decisions,manifest["source_lines"],set(spans),proposition_spans=spans)
     clashes=check_claims(claims)
     cited=set()
     for c in claims:
