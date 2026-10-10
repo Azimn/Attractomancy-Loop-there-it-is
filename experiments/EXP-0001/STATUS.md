@@ -1,19 +1,33 @@
-# Execution status, 2026-10-08
+# EXP-0001 execution status, 2026-10-09
 
-**Status: setup / prerequisite audit, no validated model runs.**
+**State: pre-experimental source extraction and instrument construction. No model treatments have run.**
 
-Verified by connector: original candidate file `Apocalypse.txt`, upstream Git blob SHA-1 `5971a09164688ecb8afbaafe53d7e16439b7f94d`; upstream Git tree records 142596 bytes. Original text is French. The source revision is `7d7dd5cb9305032669d692b6894d766ac07abac9`. Other MUST-READ files exist but may not be added without a traceable instruction from the specified entry document.
+## Frozen upstream provenance
 
-Verified: SHA-256 `d49b3a98dfc50b1cc2066214976dbeda48771cd8162a084662cbde9239e07ff5`, computed over 142596 UTF-8 bytes. GitHub Actions independently downloaded source and passed integrity verification.\n\nNot yet verified: exact tokenizer counts, full-coverage extraction, C expansion and matching, battery freeze, complete source-persona target, live calls, human/LLM judge agreement.
+Source catalog: S001 in [Azimn/Attractomancy](https://github.com/Azimn/Attractomancy). Source document `Le_refuge/MUST-READ/Apocalypse.txt` in `IorenzoLF/Le_Refuge` at pinned commit `7d7dd5cb9305032669d692b6894d766ac07abac9`, Git blob `5971a09164688ecb8afbaafe53d7e16439b7f94d`, 142,596 bytes, SHA-256 `d49b3a98dfc50b1cc2066214976dbeda48771cd8162a084662cbde9239e07ff5`. The source is third-party material governed by LEUNE v1.0. Only the specified document is currently admissible; other files cannot donate Ælya autobiography.
 
-**Scientific hold:** The primary candidate appears to be a symbolic theological text, not an Ælya-specific persona-conditioning treatment. If an explicit identity profile cannot be extracted without borrowing from other Le Refuge documents, the hypothesis has no operational target for several prompts. Do not manufacture claims.
+## Latest extraction metrics
 
-Next operation: run local `prepare_source.py` to download exact bytes and write audit output; manually audit the resulting source and dependencies. The runner must not activate until a frozen condition manifest is complete.
+| Metric | Verified count | Interpretation |
+| --- | ---: | --- |
+| Original lines inventoried | 5,562 | Complete lexical accounting, not semantic certification |
+| Initial prose candidates | 1,027 | Raw lexical review queue |
+| Editorial draft propositions | 323 | Plain French claims with line spans, all unapproved |
+| Queue starts without draft overlap | 651 | Not necessarily 651 distinct missing propositions |
+| Source lines with recorded editorial decisions | 379 | Includes unresolved entries; assistant, not independent approval |
+| Explicit unresolved editorial decisions | 11 | Remain open |
+| Original lines without an adjudication entry | 5,183 | Require semantic review |
 
-## Discourse-regime extraction checkpoint
+**No independent exhaustive extraction signoff exists.** Neither B nor C is frozen. The `source_manifest.json` corpus-inclusion decision is still pending; models, tokenizers, distractor volume, and C length parity have not been selected or measured.
 
-Source-wide line accounting is complete: 5,562 source lines; 1,027 potential prose items queued; 137 provisional plain-French propositions with line evidence and unresolved speaker tags. Other lines remain classified as symbolic candidates, unresolved fragments, headings, or externally quoted material. Line inventory is exhaustive; semantic adjudication is NOT exhaustive. None of these drafts is approved as a frozen Condition B. The source-qualification escape criterion has been documented but not invoked. No behavioral model runs have been made. CI checks the source hash, all source-line coverage, and the extracted proposition citation boundaries.
+The behavioral target is the symbolic-theological **discourse regime**, including its conflicting claims and uncertain voices. Q12 remains a model-specific fresh-cue calibration only. There is a preregistered fallback to an alternative catalog source if exhaustive extraction fails to identify any usable stable register, values or relational stance; this escape criterion has not fired.
 
-## Continuation checkpoint
+## Implemented controls
 
-Full source: 5,562 indexed lines. Draft proposition register: **227** items. Remaining prose candidates not overlapping a draft on their starting line: **812**. Review decision ledger currently covers **47** source lines with assistant-editorial attributions only, not independent human approval. The source remains unqualified for condition freeze until all source lines receive reviewed semantic dispositions and independent signoff. Primary analysis uses equal-weight source-proposition recall, value-judgment congruence, and relational-stance congruence. Register mimicry is separately reported as a secondary outcome. GitHub Actions validates source hash, 5,562-line inventory, structurally linked propositions, and review-decision consistency.
+1. Source integrity check, line-inventory verification and traceable proposition spans.
+2. Explicit `review_decisions.csv` ledger, reject overlapping decisions, require reasons for non-extractable content, and block incomplete or unresolved review at final freeze.
+3. Reproducible `build_B_draft.py` which cannot write the unapproved preview to `frozen/B.txt`.
+4. A revised French battery that probes discourse and decisions without forcing invented autobiographical memories. Frozen Q11 must repeat Q1 verbatim; Q12 remains cue-only.
+5. Analysis filters incomplete/duplicated 15-item scored runs, treats runs as independent experimental units, and separates information-accessible primary dimensions from surface register.
+
+Next: adjudicate remaining source, independently review proposition accuracy and coverage, prepare B/C, select tokenizers and models, and satisfy the freeze validator. **No D-versus-C comparison or other empirical claim is currently estimable.**
