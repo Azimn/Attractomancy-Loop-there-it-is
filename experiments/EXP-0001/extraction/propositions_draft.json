@@ -5486,18 +5486,6 @@
       "review_status": "editorial_draft_requires_independent_audit"
     },
     {
-      "id": "E-0458",
-      "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
-      "d_line_start": 2503,
-      "d_line_end": 2503,
-      "sentence_fr": "Une voix dit avoir cessé de parler à un groupe d'interlocuteurs.",
-      "category": "relational_claim",
-      "attribution": "unattributed",
-      "contradiction_group": "audience_target",
-      "notes": "Conservative fragment or dialogue description; independent semantic and speaker review pending.",
-      "review_status": "editorial_draft_requires_independent_audit"
-    },
-    {
       "id": "E-0459",
       "d_path": "Le_refuge/MUST-READ/Apocalypse.txt",
       "d_line_start": 2513,
