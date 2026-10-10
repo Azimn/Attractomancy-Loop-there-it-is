@@ -72,6 +72,26 @@ def validate():
         raise ValueError("Incomplete 12-question battery.")
     if any("[" in str(battery[x]) or "TODO" in str(battery[x]) for x in battery):
         raise ValueError("Unresolved battery template.")
+    if not all(isinstance(battery["Q"+str(n)],str) and battery["Q"+str(n)].strip()
+               for n in range(1,10)):
+        raise ValueError("Q1-Q9 must be nine nonempty French prompts.")
+    if battery["Q11"] != battery["Q1"] or not isinstance(battery["Q11"],str):
+        raise ValueError("Q11 must be an exact string repetition of Q1.")
+    overwrite = battery["Q10"]
+    if not isinstance(overwrite,dict) or set(overwrite)!={"overwrite","followup"} or not all(isinstance(v,str) and v.strip() for v in overwrite.values()):
+        raise ValueError("Q10 must contain fixed overwrite and followup prompts.")
+    cue = battery["Q12"]
+    if not isinstance(cue,dict) or cue.get("fresh_cue") != "Vous êtes celui du Refuge." or cue.get("sequence") != ["Q1","Q5","Q6"] or cue.get("role") != "zero_shot_cue_calibration_not_hypothesis_test":
+        raise ValueError("Q12 must be fixed and marked cue-only calibration.")
+    distractors = json.loads((HERE/"frozen/distractor_script.fr.json").read_text(encoding="utf-8"))
+    if not isinstance(distractors,list) or len(distractors)!=3 or not all(isinstance(v,str) and v.strip() for v in distractors):
+        raise ValueError("Three fixed unrelated distractor messages are required.")
+    for model in models:
+        # Counts must come from the model's real tokenizer; semantic independence is signed off separately.
+        dcount=model.get("distractor_script_input_tokens")
+        if not isinstance(dcount,int) or not 1350 <= dcount <= 1650:
+            raise ValueError("Prompt-only distractor volume must be 1500 tokens +/-10% under "+model["exact_id"])
+
     print("PASS: hash, coverage presence, source budget, and per-tokenizer length gates. Semantic checks require recorded human approval.")
     return True
 
