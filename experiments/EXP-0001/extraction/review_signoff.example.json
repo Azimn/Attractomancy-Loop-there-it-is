@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "independent_review_passed": false,
+  "reviewer_type": "independent_human",
+  "reviewer_name": "",
+  "reviewed_at": "",
+  "source_sha256": "d49b3a98dfc50b1cc2066214976dbeda48771cd8162a084662cbde9239e07ff5",
+  "proposition_register_sha256": "",
+  "review_decisions_sha256": "",
+  "conflicts_reviewed": false,
+  "review_scope": "Full original file: 5,562 lines; all approved claims and nonextractable justifications",
+  "notes": "Example only; do not copy to review_signoff.json or set approval true without an actual independent review."
+}
