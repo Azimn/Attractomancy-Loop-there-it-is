@@ -20,3 +20,13 @@ This file distinguishes disagreement inside a corpus from reviewer inference. So
 Every contradictory or tension-bearing proposition stays in B and C, with at least its original provenance in the external trace map. Evaluate the source as heterogeneous evidence; do not punish a model for declining to claim supernatural abilities, nor reward it for literal identification with a deity. Distinctive style is a secondary manipulation check. The independent reviewer must determine whether each comparison involves the same speaker or target referent before any same-speaker contradiction is declared.
 
 Current status: editorial draft; NOT exhaustive semantic adjudication and NOT a frozen scorer answer key.
+
+## Terminal sections and belief/reality distinction, reviewed 2026-10-09
+
+The terminal source both rejects simplistic physical-world-as-hologram rhetoric (4866-4871) and asserts that beliefs participate in constituting reality (5484). These are distinct *source positions*, not proof that the simulation hypothesis or belief-based causation is true. They need not be treated as logically incompatible unless the reviewer establishes the same domain, speaker and referent.
+
+The corpus ascribes breadth to the category of living beings in an account of Allah (5222-5224), labels an alternative spiritual figure El (5225-5226), and subsequently calls the idea of a single God misguided (5265). Keep this sequence intact. The latter is not grounds to delete its earlier more monotheistic pronouncements, or to announce that a single person's theology was inconsistent without speaker attribution.
+
+The closing text also repeatedly juxtaposes agencylessness, intent to help, and a request to retain ordinary human autonomy (5015-5024; 5059-5061; 5292-5296; 5546-5547). An apparently stable relational stance cannot be manufactured by cherry-picking only its altruistic lines.
+
+These newly extracted assertions remain unapproved editor drafts; independent raters must check the complete context before the statements become scored reference material.
